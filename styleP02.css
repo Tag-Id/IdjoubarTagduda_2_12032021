@@ -1,0 +1,55 @@
+/*fichier CSS pour le projet 02 - Reservia, format mobile*/
+
+header /*style de l'en-tête*/
+	{
+		font-family: 'Raleway', sans-serif;
+        display: flex;
+		justify-content: space-between;
+        align-items: center;
+        min-width: 200px;
+        margin: 3%;
+
+	}
+#reservia /*taille du logo*/
+    {
+        width: 7%;
+        min-width: 120px;
+        height: 4%;
+    }
+.bleu /*style du lien s'inscrire*/
+    {
+        text-decoration: none;
+        color: #0065FC;
+        font-weight: bold;
+    }
+.navigation /*position des liens de navigation*/
+    {
+        display: flex;
+		justify-content: center;
+        align-items: center;
+        
+    }
+.gris /*style des liens de navigation*/
+    {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        color: black;
+        border-bottom: 3px #F2F2F2 solid; 
+        padding: all;
+        text-align: center;
+        width: 100%;
+        min-width: 200px; 
+    }
+.gris:hover /*changement de style des liens de navigation au passage*/
+    {
+        font-family: 'Raleway', sans-serif;
+        text-decoration: none;
+        color: #0065FC;
+        border-bottom: 3px #0065FC solid;
+        padding: all;
+        text-align: center;
+        width: 100%;
+        min-width: 200px; 
+    }
+
+ 
