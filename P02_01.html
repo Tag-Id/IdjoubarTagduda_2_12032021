@@ -25,3 +25,32 @@
             <a class="gris" href="#Activités">Activités</a> 
         </nav>
         
+        <h1> <!--insertion de textes-->
+            Trouvez votre hébergement pour des vacances de rêve
+        </h1>	
+        <p>
+            En plein centre ville ou en pleine nature
+        </p>
+
+        <!--formulaire de recherche-->
+        <form method="post" action="données.php"> <!--formulaire de recherche-->
+            <fieldset>
+                <i class="fas fa-map-marker-alt"></i> 
+                <input type="text" class="saisie" name=”ville” id="ville" />	
+                <input type="submit" class="bouton" value="Rechercher"/> 
+                <i class="fas fa-search"></i>
+            </fieldset>	
+        </form>	
+        
+        <section id=filtres> <!--icônes des filtres-->
+            <h2> Filtres </h2> 
+            <span class= "critere"> <i class="fas fa-money-bill-wave"></i> Economique </span> 
+            <span class= "critere"> <i class="fas fa-child"></i>Familial </span> 
+            <span class= "critere"> <i class="fas fa-heart"></i>Romantique </span> 
+            <span class= "critere"> <i class="fas fa-dog"></i>Animaux autorisés </span> 
+        </section>
+
+        <p id="info"> <!--info descriptive-->
+            <i class="fas fa-info"></i>
+            Plus de 500 logements sont disponibles dans cette ville
+        </p>
