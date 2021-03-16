@@ -52,8 +52,8 @@ header /*style de l'en-tête*/
 h1 /*style du titre*/
     {
         font-family: 'Raleway', sans-serif;
-        font-size: 1.5em;
-        font-weight: bold; 
+        font-size: 20px;
+        font-weight: bolder; 
     }
 p  /*police de la description*/
     {
@@ -63,6 +63,7 @@ fieldset /*champ de recherche de localité*/
     {
         border: 1px #DEEBFF solid;
         border-radius: 15px/20px;
+        padding: 0%;
         width: fit-content;
         height: fit-content;
     }
@@ -79,7 +80,8 @@ fieldset /*champ de recherche de localité*/
     {
         color: black;
 		border: 1px solid #F2F2F2;
-		border-radius: 5px / 20px;
+		border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         padding: 10px;
 		background-color: #F2F2F2;
     }
@@ -87,7 +89,7 @@ fieldset /*champ de recherche de localité*/
     {
         color:  #0065FC;
 		border: 1px solid #DEEBFF;
-		border-radius: 5px / 20px;
+		border-radius: 10px / 10px;
         padding: 10px;
 		background-color: #DEEBFF;
     }
@@ -111,7 +113,7 @@ h2
         border: 1px #DEEBFF solid;
         border-radius: 20px/20px;
         width:fit-content;
-        padding: 5px;
+        padding-right: 20px;
         margin: 5px;
     }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /*style des icones de filtres*/
@@ -119,17 +121,18 @@ h2
 		color:  #0065FC;
 		border: 1px solid #DEEBFF;
 		border-radius: 20px / 20px;
-        padding: 6px;
+        padding: 8px;
+        margin-left: 0%;
+        margin-right: 10px;
 		background-color: #DEEBFF;
 	}
 .fa-info /*style de l'icone info*/
     {
+        font-size: 10px;
         color:  #0065FC;
 		border: 1px solid #DEEBFF;
 		border-radius: 20px / 20px;
-        width: 5px;
-        height: 8px;
-        padding: 10px; 
+        padding: 8px; 
     }
 
     /*couleur des étoiles*/
@@ -141,9 +144,9 @@ h2
 	{
 		color:  #F2F2F2;
 	}
-#Populaires
+#Populaires /*style de la partie les plus populaires*/
     {
-        font: 1em 'Raleway';
+        font-family:'Raleway', sans-serif;
 		background-color: #f2f2f2;
         display: flex;
         flex-wrap: wrap;
@@ -151,30 +154,28 @@ h2
         align-items: baseline;
 		width: 100%;
         height: fit-content;
-		padding: 0.5em;
+        margin-right: 10px;
     }
-#Populaires img 
+#Populaires img /*format images dans la partie les plus populaires*/
     {
-        border: 1px solid #F2F2F2;
-        border-radius: 20px / 10px;
-        width: 50%;
+        border-top-left-radius:10px;
+        border-bottom-left-radius:10px;
+        width: 40%;
+        max-height: 100px;
+        margin: 5px;
+    }
+figcaption /*organisation du paragraphe de description des images*/
+    {
+        font-family: 'Raleway', sans-serif;
+		width: 50%;
         height: fit-content;
-
-        
+		margin-left: 5%;
     }
-/*#Populaires fieldset
+strong /*éléments en gras sur la desccription des images*/
     {
-        font: 1em 'Raleway';
-		border: 1px solid red;
-		border-radius: 20px / 10px;
-		box-shadow: 6px  6px  6px red;
-		background-color: white;
-		width: 80%;
-        height: 5em;
-		padding: 0.5em;
-    }*/
-
-figure
+        font-weight: bold;
+    }
+figure /*style image +figcaption*/
 	{
         border: 1px solid #F2F2F2;
 		border-radius: 20px / 10px;
@@ -183,17 +184,9 @@ figure
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        align-items: baseline;
+        align-items: center;
 		width: 100%;
         height: fit-content;
-		padding: 0.5em;
+		padding: 0.5em,0.5em,0.5em,0;
 
-	}
-	
-/*img
-	{
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 50%;
 	}
