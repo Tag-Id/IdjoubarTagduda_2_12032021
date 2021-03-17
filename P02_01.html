@@ -43,7 +43,7 @@
         </form>	
         
         <section id=filtres> <!--icônes des filtres-->
-            <h2> Filtres </h2> 
+            <h1> Filtres </h1> 
             <span class= "critere"> <i class="fas fa-money-bill-wave"></i> Economique </span> 
             <span class= "critere"> <i class="fas fa-child"></i>Familial </span> 
             <span class= "critere"> <i class="fas fa-heart"></i>Romantique </span> 
@@ -57,7 +57,9 @@
         
         <!--les 3 sections suivantes affichent des photos et des infos relatives-->
         <section id= "Populaires">
-			<h1> Les plus populaires</h1> <i class="fas fa-chart-line"></i>
+			<div class= "aligner">
+            <h1> Les plus populaires</h1> <i class="fas fa-chart-line"></i>
+            </div>
 			<figure>
 				<img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
 				<figcaption><strong>Hôtel Le soleil du matin</strong> </br> Nuit à partir de 128<strong>€</strong>
@@ -92,7 +94,7 @@
 		</section>
 
 		<section id="Hébergements">
-			<h1> Hébergements à Marseille</h1>
+			<div class= "aligner"> <h1> Hébergements à Marseille</h1> </div>
 			<figure>
 				<img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
 				<figcaption> <strong>Auberge la Cannebière</strong> </br> Nuit à partir de <strong>25€</strong></figcaption>
@@ -149,11 +151,11 @@
 				<i class="fa fa-star blue"></i>
 				<i class="fa fa-star blue"></i>
 			</figure>
-			<a href="#Afficherplus">Afficher plus</a> 
+			<a href="#Afficherplus" class="plus">Afficher plus</a> 
 		</section>
 
 		<section id="Activités">
-			<h1> Activités à Marseille</h1>
+			<div class= "aligner"> <h1> Activités à Marseille</h1> </div>
 			<div>
 				<figure>
 				<img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
@@ -181,3 +183,33 @@
 			</figure>
 			</div>
 		</section>
+
+        <footer> <!--pied de page, listes d'éléments-->
+			<div>
+				<h2> A propos </h2>
+				<ul>
+					<li> Fonctionnement du site </li>
+					<li> Conditions générales de vente </li>
+					<li> Données et confidentialité</li>
+				</ul>
+				
+			</div>
+			
+			<div>
+				<h2> Nos hébergements </h2>
+				<ul>
+					<li> Charte qualité </li>
+					<li> Soumettre votre hôtel </li>
+				</ul>
+			</div>
+			
+			<div>
+				<h2> Assistance </h2>
+				<ul>
+					<li> Centre d'aide </li>
+					<li> Nous contacter </li>
+				</ul>
+			</div>
+			
+		</footer>
+	</body>
