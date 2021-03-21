@@ -74,8 +74,11 @@ p  /*police de la description*/
     }
 fieldset /*champ de recherche de localité*/
     {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
         border: 1px #DEEBFF solid;
-        border-radius: 15px/20px;
+        border-radius: 10px/10px;
         padding: 0;
         margin: 10px;
         width: fit-content;
@@ -99,14 +102,18 @@ fieldset /*champ de recherche de localité*/
     }
 .fa-search
     {
-        font-family: 'Raleway';
+        font-family: FontAwesome, 'Raleway';
         color:  white;
         font-weight: bold;
         border: 1px solid  #0065FC;
         border-radius: 10px / 10px;
         padding: 10px;
         background-color:  #0065FC;
-    }   
+    }
+.recherche
+    {
+        display: none;      
+    } 
 #filtres /*style de la zone de filtres*/
     {  
         font-weight: bold;
@@ -115,10 +122,6 @@ fieldset /*champ de recherche de localité*/
         justify-content: flex-start;
         align-items: flex-end;
         margin: 10px;
-    }
-h2 #filtres
-    {
-        align-self: flex-start;
     }
 .critere /* style des éléments à filtrer*/
     {   
