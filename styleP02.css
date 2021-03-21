@@ -5,57 +5,68 @@ body
         font-family: 'Raleway', sans-serif;
     }
 
-header /*style de l'en-tête*/
-	{
-        display: flex;
-		justify-content: space-between;
-        align-items: center;
-        min-width: 200px;
-        margin: 3%;
-
-	}
-#reservia /*taille du logo*/
+header /*style de l'en-tête en format mobile*/
     {
-        width: 7%;
-        min-width: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 300px;
+        width: 100%;
+        margin: auto;
+    }   
+#reservia /*taille du logo*/
+    {  
+        width: 100px;
         height: 4%;
-    }
+    } 
+
 .bleu /*style du lien s'inscrire*/
     {
         text-decoration: none;
         color: #0065FC;
         font-weight: bold;
-    }
+    }  
 .navigation /*position des liens de navigation*/
-    {
+    {   
         display: flex;
-		justify-content: center;
+        justify-content: space-between;
+        justify-self: flex-end;
+        align-self: center;
         align-items: center;
-        
+        text-align: center;
+        width: 100%;
+        min-width: 300px; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
     }
+
 .gris /*style des liens de navigation*/
     {
         text-decoration: none;
         color: black;
         border-bottom: 3px #F2F2F2 solid; 
-        text-align: center;
         width: 100%;
-        min-width: 200px; 
     }
 .gris:hover /*changement de style des liens de navigation au passage*/
     {
         text-decoration: none;
         color: #0065FC;
         border-bottom: 3px #0065FC solid;
-        text-align: center;
         width: 100%;
-        min-width: 200px; 
     }
 h1 /*style du titre*/
     {
         font-size: 20px;
         font-weight: bolder; 
         margin: 10px;
+    }
+h2
+    {
+        font-size: 20px;
+        font-weight: bolder; 
+        margin: 10px; 
     }
 p  /*police de la description*/
     {
@@ -67,47 +78,47 @@ fieldset /*champ de recherche de localité*/
         border-radius: 15px/20px;
         padding: 0;
         margin: 10px;
-        width: 90%;
+        width: fit-content;
         height: fit-content;
     }
-
 .saisie /*retrait de la bordure du champs de saisie*/
     {   
         font-weight: bold;
-        border: none;
-        width: 58.7%;
+        border-style: none;
+        padding: 10px;
+        width: 240px;
     }
-
 .fa-map-marker-alt /*couleur de fond de l'icone map*/
     {
         color: black;
-		border: 1px solid #F2F2F2;
-		border-top-left-radius: 10px;
+        border: 1px solid #F2F2F2;
+        border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
         padding: 10px;
-		background-color: #F2F2F2;
+        background-color: #F2F2F2;
     }
 .fa-search
     {
-        color:  #0065FC;
-		border: 1px solid #DEEBFF;
-		border-radius: 10px / 10px;
-        padding: 10px;
-		background-color: #DEEBFF;
-    }   
-h2
-    {   
-        font-size: 15px;
+        font-family: 'Raleway';
+        color:  white;
         font-weight: bold;
-    }
+        border: 1px solid  #0065FC;
+        border-radius: 10px / 10px;
+        padding: 10px;
+        background-color:  #0065FC;
+    }   
 #filtres /*style de la zone de filtres*/
-    {
+    {  
         font-weight: bold;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-items: flex-end;
         margin: 10px;
-    
+    }
+h2 #filtres
+    {
+        align-self: flex-start;
     }
 .critere /* style des éléments à filtrer*/
     {   
@@ -118,46 +129,46 @@ h2
         margin: 5px;
     }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /*style des icones de filtres*/
-	{
-		color:  #0065FC;
-		border: 1px solid #DEEBFF;
-		border-radius: 20px / 20px;
+    {
+        color:  #0065FC;
+        border: 1px solid #DEEBFF;
+        border-radius: 20px / 20px;
         padding: 8px;
         margin-left: 0%;
         margin-right: 10px;
-		background-color: #DEEBFF;
-	}
+        background-color: #DEEBFF;
+    }
 .fa-info /*style de l'icone info*/
     {
         font-size: 10px;
         color:  #0065FC;
-		border: 1px solid #DEEBFF;
-		border-radius: 20px / 20px;
+        border: 1px solid #DEEBFF;
+        border-radius: 20px / 20px;
         padding: 8px; 
     }
 
     /*couleur des étoiles*/
 .fa-star.blue
-	{
-		color:  #0065FC; 
-	}
+    {
+        color:  #0065FC; 
+    }
 .fa-star
-	{
-		color:  #F2F2F2;
-	}
+    {
+        color:  #F2F2F2;
+    }
 #Populaires /*style de la partie les plus populaires*/
     {
-		background-color: #f2f2f2;
+        background-color: #f2f2f2;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: baseline;
-		width: 100%;
+        width: 100%;
         height: fit-content;
         margin-right: 10px;
         padding-top: 10px;
     }
-.aligner /*format du titre de la partie 'les plus populaires'*/
+.titreaside /*format du titre de la partie 'les plus populaires'*/
     {
         display: flex;
         align-items: baseline;
@@ -166,19 +177,19 @@ h2
         margin-left: 20px;
     }
 #Populaires figure /*style image +figcaption*/
-	{
+    {
         border: 1px solid #F2F2F2;
-		border-radius: 20px / 10px;
-		box-shadow: 5px  5px  5px rgb(190, 190, 190);
-		background-color: white;
+        border-radius: 20px / 10px;
+        box-shadow: 5px  5px  5px rgb(190, 190, 190);
+        background-color: white;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-		width: 80%;
+        width: 80%;
         min-width: 300px;
         height: fit-content;
-	}
+    }
 #Populaires img /*format images dans la partie les plus populaires*/
     {
         border-top-left-radius:10px;
@@ -189,9 +200,9 @@ h2
     }
 #Populaires figcaption /*organisation du paragraphe de description des images*/
     {
-		width: 50%;
+        width: 50%;
         height: fit-content;
-		margin-left: 5%;
+        margin-left: 5%;
     }
 strong /*éléments en gras sur la desccription des images*/
     {
@@ -203,20 +214,20 @@ strong /*éléments en gras sur la desccription des images*/
         flex-direction: column;
         justify-content: flex-start;
         align-items: baseline;
-		width: 100%;
+        width: 100%;
         height: fit-content;
         margin-top: 20px;
     }
 #Hébergements figure /*style image +figcaption*/
-	{
+    {
         border: 1px solid #F2F2F2;
-		border-radius: 20px / 10px;
-		box-shadow: 5px  5px  5px rgb(190, 190, 190);
-		background-color: white;
+        border-radius: 20px / 10px;
+        box-shadow: 5px  5px  5px rgb(190, 190, 190);
+        background-color: white;
         width: 80%;
-		min-width: 300px;
+        min-width: 300px;
         height: fit-content;
-	}
+    }
 #Hébergements img /*format images dans la partie hébergements*/
     {
         border-top-left-radius:10px;
@@ -228,9 +239,9 @@ strong /*éléments en gras sur la desccription des images*/
     }
 #Hébergements figcaption /*organisation du paragraphe de description des images*/
     {
-		width: 100%;
+        width: 100%;
         height: fit-content;
-		margin-left: 5%;
+        margin-left: 5%;
     }
 .plus
     {
@@ -275,11 +286,11 @@ strong /*éléments en gras sur la desccription des images*/
         margin: 2%;
         margin-left: 5%;
         font-weight: bold;
-		width: 100%;
+        width: 100%;
         height: fit-content;
     }
 
-footer
+footer /*style du pied de page*/
     {
         background-color: #F2F2F2;
         padding: 5%;
@@ -288,4 +299,5 @@ ul
     {
         font-size: 15px;
         list-style: none;
+        padding-left: 0;
     }
