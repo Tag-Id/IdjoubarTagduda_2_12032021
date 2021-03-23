@@ -131,6 +131,11 @@ fieldset /*champ de recherche de localité*/
         padding-right: 20px;
         margin: 5px;
     }
+.critere:hover /* style des éléments à filtrer*/
+    {   
+        background-color: #0065FC;
+        color: #DEEBFF;
+    }
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog /*style des icones de filtres*/
     {
         color:  #0065FC;
@@ -158,6 +163,11 @@ fieldset /*champ de recherche de localité*/
 .fa-star
     {
         color:  #F2F2F2;
+    }
+.lien
+    {
+        color:black;
+        text-decoration: none;
     }
 #Populaires /*style de la partie les plus populaires*/
     {
