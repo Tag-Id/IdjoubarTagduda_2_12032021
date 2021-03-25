@@ -1,6 +1,7 @@
-/*fichier CSS pour le projet 02 - Reservia, format mobile*/
+/*fichier CSS pour le projet 02 - Reservia*/
 
-body
+/*par défaut, format mobile*/
+body /*style de la page, police*/
     {
         font-family: 'Raleway', sans-serif;
     }
@@ -30,10 +31,7 @@ header /*style de l'en-tête en format mobile*/
 .navigation /*position des liens de navigation*/
     {   
         display: flex;
-        justify-content: space-between;
         justify-self: flex-end;
-        align-self: center;
-        align-items: center;
         text-align: center;
         width: 100%;
         min-width: 400px; 
@@ -83,7 +81,7 @@ fieldset /*champ de recherche de localité*/
         align-content: flex-start;
         border: 1px #DEEBFF solid;
         border-radius: 10px/10px;
-        padding: 0;
+        padding: 0px;
         margin: 10px;
         width: fit-content;
         height: fit-content;
@@ -177,6 +175,10 @@ fieldset /*champ de recherche de localité*/
         color:black;
         text-decoration: none;
     }
+#Chambres h3
+    {
+        display: none;
+    }
 #Populaires /*style de la partie les plus populaires*/
     {
         background-color: #f2f2f2;
@@ -210,7 +212,7 @@ fieldset /*champ de recherche de localité*/
         justify-content: flex-start;
         align-items: center;
         width: 80%;
-        min-width: 300px;
+        min-width: 250px;
         max-width: 400px;
         height: fit-content;
     }
@@ -310,7 +312,7 @@ strong /*éléments en gras sur la desccription des images*/
         min-width: 300px;
         max-width: 400px;
         height: fit-content;
-        padding: 0.5em,0.5em,0.5em,0;
+        padding: 0.5em,0.5em,0.5em,0em;
     }
 #Activités img /*format images dans la partie hébergements*/
     {
@@ -339,5 +341,82 @@ ul
     {
         font-size: 15px;
         list-style: none;
-        padding-left: 0;
+        padding-left: 0px;
+    }
+
+@media all and (min-width: 800px)/*particularité des écrans tablettes (paysage) et ordi*/
+    {
+    header /*style de l'en-tête en format mobile*/
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 800px;
+            width: 100%;
+            margin: auto;
+        } 
+    nav
+        {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    .navigation
+        {
+            text-align: center;
+            width: 30%;
+            min-width: fit-content;
+            max-width: 300px; 
+            padding-left: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }    
+    .inscrire
+        {
+            text-align: center;
+            padding-left: 30px;
+            margin-left: 0px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+    #reservia 
+        {
+            padding-right: 60%;
+            padding-left: 0px;
+            margin-left: 10px;
+        }
+    header > #reservia /*changement d'ordre des éléments de l'en-tête*/
+        {
+            order: 1;
+        }     
+    header > .inscrire
+        {
+            order: 3;
+        }   
+    header > .navigation 
+        {
+            order: 2;
+        }
+    .gris /*style des liens de navigation*/
+        {
+            text-decoration: none;
+            color: black;
+            border-top: 3px #F2F2F2 solid; 
+            border-bottom: none;
+            width: 150px;
+            padding-top: 20px;
+            padding-right: 0px;
+        }
+    .gris:hover /*changement de style des liens de navigation au passage*/
+        {
+            text-decoration: none;
+            color: #0065FC;
+            border-top: 3px #0065FC solid;
+            border-bottom: none;
+            width: 40%;
+        }
+    #presentation
+        {
+            min-width: 400px;
+        }
     }
