@@ -252,7 +252,7 @@ fieldset /*champ de recherche de localité*/
      }
 #Populaires figcaption /*organisation du paragraphe de description des images*/
     {
-        font-size: 15px;
+        font-size: 14px;
         display: flex;
         flex-direction: column;
         width: 45%;
@@ -369,7 +369,7 @@ strong /*éléments en gras sur la desccription des images*/
         margin-left: 20px;
         font-weight: bolder;
         font-size: 15px;
-        line-height: 20px;
+        line-height: 25px;
         width: 100%;
         height: fit-content;
     }
@@ -392,4 +392,722 @@ ul
         line-height: 25px;
         list-style: none;
         padding-left: 0px;
+    }
+
+@media all and (min-width: 600px) and (max-width: 959px)/*particularité des écrans tablettes */
+    {
+    body 
+        {
+            margin: 2%;
+        }
+    header /*style de l'en-tête en format mobile*/
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 580px;
+            width: 100%;
+            margin: auto;
+        }   
+    #reservia /*taille du logo*/
+        {  
+            width: 100px;
+            height: 4%;
+            margin-left: 5px;
+        } 
+    .inscrire /*position du lien s'inscrire*/
+        {
+            margin-right: 10px;
+        } 
+    .navigation /*position des liens de navigation*/
+        {   
+            display: flex;
+            justify-self: flex-end;
+            text-align: center;
+            width: 100%;
+            min-width: 580px; 
+            padding-top: 20px;
+            margin-bottom: 10px;
+        }
+    
+    .gris /*style des liens de navigation*/
+        {
+            text-decoration: none;
+            color: black;
+            border-top: 3px #F2F2F2 solid; 
+            border-bottom: none;
+            width: 580px;
+            padding-top: 20px;
+            padding-right: 0px;
+        }
+    .gris:hover /*changement de style des liens de navigation au passage*/
+        {
+            text-decoration: none;
+            color: #0065FC;
+            border-top: 3px #0065FC solid;
+            border-bottom: none;
+            width: 40%;
+        }
+    h1
+        {
+            font-size: 22px;
+        }
+    .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
+        {
+            display: none; 
+        }
+    .recherche /*affiche le bouton recherche pour la version écran*/
+        {
+            display: inline;
+            color:  white;
+            font-family: 'Raleway';
+            font-weight: bold;
+            border: 1px solid  #0065FC;
+            border-radius: 10px / 10px;
+            padding: 10px;
+            background-color:  #0065FC;     
+        } 
+    fieldset
+        {
+            margin: 0px;
+        }
+    #filtres /*style de la zone de filtres*/
+        {  
+            font-weight: bold;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 20px;
+            margin-left: 0px;  
+        }
+    h3 
+        {
+            padding-right: 20px;
+        }
+    .fa-info /*style de l'icone info*/
+        {
+            margin: 0px;
+            margin-right: 10px;
+        }
+    #Héber /*style commun aux 2 parties hébergements*/
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: stretch;
+            align-items:baseline;
+            max-height: 600px;
+            width: 100%;
+            min-width: 580px;
+        }
+    #Populaires /*style de la partie les plus populaires*/
+        {
+            background-color: #f2f2f2;
+            border-radius: 10px/10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 30%;
+            min-width: fit-content;
+            height:fit-content;
+            margin-left: 0px;
+            padding-bottom: 8px;
+        }
+    .titreaside /*format du titre de la partie 'les plus populaires'*/
+        {
+            display: flex;
+            width: 95%;
+            min-width: 260px;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
+    #Populaires figure /*style image +figcaption*/
+        {
+            border: 1px solid #F2F2F2;
+            border-radius: 20px / 10px;
+            box-shadow: 5px  5px  5px rgb(190, 190, 190);
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 275px;
+            height: fit-content;
+            margin: 5px;
+            margin-bottom: 20px;
+        }
+    #Populaires img /*format images dans la partie les plus populaires*/
+        {
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            width: 40%;
+            max-width: 120px;
+            height: 120px;
+            margin: 5px;
+        }
+    #Populaires figcaption /*organisation du paragraphe de description des images*/
+        {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            max-width: 200px;
+            height: fit-content;
+            margin: 0px;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 18px;
+        }
+   
+    #Hébergements /*style de la partie 'hébergements à Marseille'*/
+        {
+            background-color: #f2f2f2;
+            border-radius: 10px/10px;
+            width: 60%;
+            min-width: fit-content;
+            height: 520px;
+            padding: 10px;
+            padding-right:20px; 
+            margin: 0px;
+            margin-right: 10px;   
+        }
+    .cannebière
+        {grid-area: un;}
+    .hport
+        {grid-area: deux;}
+    .mouettes
+        {grid-area: trois;}
+    .mer
+        {grid-area: quatre;}
+    .panier
+        {grid-area: cinq;}
+    .amina
+        {grid-area: six;}
+    .disposition /*structure la partie hébergements*/
+        {
+            display: grid;
+            grid-template-areas:
+                'un deux'
+                'trois quatre'
+                'cinq six';
+            grid-gap: 15px;
+            padding-bottom: 20px;
+            margin: 0px;
+        }
+    #Hébergements figure /*style image +figcaption*/
+        {
+            min-width: 150px;
+            max-width: 150px;
+            width: 100%;
+            height: fit-content;
+            margin: 0px;
+        }
+    #Hébergements img /*format images dans la partie hébergements*/
+        {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            height: 50%;
+            max-height: 60px;
+            width: 98%;
+            max-width: 150px;
+            margin: 2%;
+        }
+    #Hébergements figcaption /*organisation du paragraphe de description des images*/
+        {
+            width: 100%;
+            min-width: 180px;
+            max-width: 200px;
+            height: fit-content;
+            margin:0px;
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    .plus
+        {
+            text-align: left;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            margin: 0px;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+   #Activités /*style de la partie 'activités à Marseille'*/
+         {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            min-width: 580px;
+            height: 650px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+    
+    .dispoacti
+        {
+            display: grid;
+            grid-template-columns: 300px 300px; 
+            grid-template-rows: 200px 200px 200px;
+            gap: 10px ;
+        
+        }
+    .port 
+        { 
+            grid-area: 1 / 1 / 1 / 1;
+           
+        }
+    .fort
+        {  
+            grid-area: 1 / 1 / 2 / 2;
+
+        }
+    .frioul
+        {  
+            grid-area: 2 / 2 / 1 / 1;
+        }
+    .calanques
+        {  
+            grid-area: 2 / 2 / 2 / 2;
+        }  
+    .nd 
+        {  
+            grid-area: 3 / 3 / 1 / 1;
+        }
+    .longchamp
+        {  
+            grid-area: 3 / 3 / 2 / 2;
+        }
+    #Activités figure /*style image +figcaption*/
+        {
+            border: 1px solid #F2F2F2;
+            border-radius: 20px / 10px;
+            box-shadow: 5px  5px  5px rgb(190, 190, 190);
+            background-color: white;
+            width: 100%;
+            min-width: 210px;
+            max-width: 300px;
+            height: fit-content;
+            max-height: 200px;
+            margin: 0px;
+        }
+    #Activités img /*format images dans la partie activités*/
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            min-width: 200px;
+            height: 150px;
+            max-height: 150px;
+        }
+    #Activités figcaption /*particularité dans le descriptif des images des activités*/
+        {   
+            margin: 2%;
+            margin-left: 5%;
+            font-weight: bold;
+            width: 100%;
+            height: fit-content;
+        }
+
+    footer /*style du pied de page*/
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: #F2F2F2;
+            min-width: 400px;
+        }
+    footer div
+        {
+            padding: 2%;
+            padding-right: 7%;
+            padding-left: 5%;
+        }
+    ul
+        {
+            font-size: 13px;
+            list-style: none;
+        }
+    }
+
+@media all and (min-width: 960px)/*particularité des écrans ordi*/
+    {  
+    body 
+        {
+            margin: 2%;
+        }
+    header /*style de l'en-tête en format écran*/
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: stretch;
+            align-items: center;
+            min-width: 960px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        } 
+    .navigation
+        {
+            justify-self: flex-end;
+            text-align: center;
+            min-width: fit-content;
+            width: 250px;
+            padding-top: 0px;
+        }    
+    .inscrire
+        {
+            padding-left: 30px;
+            margin-top: 10px;
+            justify-self: flex-end;
+        }
+    #reservia 
+        {
+            padding-right: 42%;
+            margin-left: 0px;
+        }
+    header > #reservia /*changement d'ordre des éléments de l'en-tête*/
+        {
+            order: 1;
+        }     
+    header > .inscrire
+        {
+            order: 3;
+        }   
+    header > .navigation 
+        {
+            order: 2;
+        }
+    .gris /*style des liens de navigation*/
+        {
+            text-decoration: none;
+            color: black;
+            border-top: 3px #F2F2F2 solid; 
+            border-bottom: none;
+            width: 150px;
+            padding-top: 20px;
+            padding-right: 0px;
+        }
+    .gris:hover /*changement de style des liens de navigation au passage*/
+        {
+            text-decoration: none;
+            color: #0065FC;
+            border-top: 3px #0065FC solid;
+            border-bottom: none;
+            width: 40%;
+        }
+    .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
+        {
+            display: none; 
+        }
+    .recherche /*affiche le bouton recherche pour la version écran*/
+        {
+            display: inline;
+            color:  white;
+            font-family: 'Raleway';
+            font-weight: bold;
+            border: 1px solid  #0065FC;
+            border-radius: 10px / 10px;
+            padding: 10px;
+            background-color:  #0065FC;     
+        } 
+    fieldset
+        {
+            margin: 0px;
+        }
+    #filtres /*style de la zone de filtres*/
+        {  
+            font-weight: bold;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: baseline;
+            margin: 20px;
+            margin-left: 0px;  
+        }
+    h3 
+        {
+            padding-right: 20px;
+        }
+    .fa-info /*style de l'icone info*/
+        {
+            margin: 0px;
+            margin-right: 10px;
+        }
+    #Héber /*style commun aux 2 parties hébergements*/
+        {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: stretch;
+            align-items:baseline;
+            max-height: 600px;
+            width: 100%;
+            min-width: 930px;
+        }
+    #Populaires /*style de la partie les plus populaires*/
+        {
+            background-color: #f2f2f2;
+            border-radius: 10px/10px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            width: 30%;
+            min-width: fit-content;
+            height:fit-content;
+            margin-left: 0px;
+            padding-bottom: 8px;
+        }
+    .titreaside /*format du titre de la partie 'les plus populaires'*/
+        {
+            display: flex;
+            width: 95%;
+            min-width: 260px;
+            justify-content: space-between;
+            margin-left: 10px;
+        }
+    #Populaires figure /*style image +figcaption*/
+        {
+            border: 1px solid #F2F2F2;
+            border-radius: 20px / 10px;
+            box-shadow: 5px  5px  5px rgb(190, 190, 190);
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 275px;
+            height: fit-content;
+            margin: 5px;
+            margin-bottom: 20px;
+        }
+    #Populaires img /*format images dans la partie les plus populaires*/
+        {
+            border-top-left-radius:10px;
+            border-bottom-left-radius:10px;
+            width: 40%;
+            max-width: 120px;
+            height: 120px;
+            margin: 5px;
+        }
+    #Populaires figcaption /*organisation du paragraphe de description des images*/
+        {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            max-width: 200px;
+            height: fit-content;
+            margin: 0px;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 18px;
+        }
+   
+    #Hébergements /*style de la partie 'hébergements à Marseille'*/
+        {
+            background-color: #f2f2f2;
+            border-radius: 10px/10px;
+            width: 60%;
+            min-width: fit-content;
+            height: 520px;
+            padding: 10px;
+            padding-right:20px; 
+            margin: 0px;
+            margin-right: 10px;   
+        }
+    .cannebière
+        {grid-area: un;}
+    .hport
+        {grid-area: deux;}
+    .mouettes
+        {grid-area: trois;}
+    .mer
+        {grid-area: quatre;}
+    .panier
+        {grid-area: cinq;}
+    .amina
+        {grid-area: six;}
+    .disposition /*structure la partie hébergements*/
+        {
+            display: grid;
+            grid-template-areas:
+                'un deux trois'
+                'quatre cinq six';
+            grid-gap: 15px;
+            padding-bottom: 50px;
+            margin: 0px;
+        }
+    #Hébergements figure /*style image +figcaption*/
+        {
+            min-width: fit-content;
+            max-width: 200px;
+            width: 100%;
+            height: fit-content;
+            margin: 0px;
+        }
+    #Hébergements img /*format images dans la partie hébergements*/
+        {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            height: 50%;
+            max-height: 80px;
+            width: 98%;
+            max-width: 180px;
+            margin: 2%;
+        }
+    #Hébergements figcaption /*organisation du paragraphe de description des images*/
+        {
+            width: 100%;
+            min-width: 180px;
+            max-width: 200px;
+            height: fit-content;
+            margin-left: 5%;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    .plus
+        {
+            text-align: left;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            margin: 0px;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+   #Activités /*style de la partie 'activités à Marseille'*/
+         {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            min-width: 960px;
+            height: 500px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+    
+    .dispoacti
+        {
+            display: grid;
+            grid-template-columns: 230px 230px 230px 230px; 
+            grid-template-rows: 200px 200px;
+            gap: 10px ;
+        }
+    .port 
+        { 
+            /*grid-row: 1 / 2;
+            grid-column: 1;*/
+            /*grid-area: 1 / 2 / 1 / 1;
+            */grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+    .fort
+        {  
+            /*grid-row: 1;
+            grid-column: 2;
+            /*grid-area: 1 / 1 / 2 / 2;
+            */grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+    .frioul
+        {  
+            /*grid-row: 2;
+            grid-column: 2;
+            /*grid-area: 2 / 2 / 2 / 2;
+           */grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+    figure #calanques
+        {  
+            grid-area: 1 / 2 / 3 / 3;
+            /*grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 3;*/
+        }  
+    figure #nd 
+        {  
+            grid-area: 1 / 1 / 4 / 4;
+            /*grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 4;
+            grid-column-end: 4;*/
+        }
+    figure #longchamp
+        {  
+            grid-area: 2 / 2 / 4 / 4;
+            /*grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 4;
+            grid-column-end: 4;*/
+        }
+    #Activités figure /*style image +figcaption*/
+        {
+            border: 1px solid #F2F2F2;
+            border-radius: 20px / 10px;
+            box-shadow: 5px  5px  5px rgb(190, 190, 190);
+            background-color: white;
+            width: 100%;
+            min-width: 210px;
+            max-width: 220px;
+            height: fit-content;
+            margin: 0px;
+        }
+    #Activités img.petiteimg /*format images dans la partie activités*/
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            min-width: 210px;
+            height: 150px;
+            max-height: 150px;
+        }
+    #Activités img.grandeimg
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            min-width: 210px;
+            height: 350px;
+            max-height: 350px;
+        }
+    #Activités figcaption /*particularité dans le descriptif des images des activités*/
+        {   
+            margin: 2%;
+            margin-left: 5%;
+            font-weight: bold;
+            width: 100%;
+            height: fit-content;
+        }
+
+    footer /*style du pied de page*/
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            background-color: #F2F2F2;
+            min-width: 400px;
+        }
+    footer div
+        {
+            padding: 2%;
+            padding-right: 7%;
+            padding-left: 5%;
+        }
+    ul
+        {
+            font-size: 15px;
+            list-style: none;
+        }
     }
