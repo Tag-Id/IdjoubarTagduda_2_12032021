@@ -111,6 +111,12 @@ fieldset /*champ de recherche de localité*/
     {
         outline: none;
     }
+.saisie::placeholder
+    {
+        background-color: white;
+        font-weight: bold;
+        color: black;
+    }
 .fa-map-marker-alt /*couleur de fond de l'icone map*/
     {
         color: black;
@@ -650,33 +656,7 @@ ul
             grid-template-rows: 200px 200px 200px;
             gap: 30px ;
             margin-left: 20px;
-        
-        }
-    .port 
-        { 
-            grid-area: 1 / 1 / 1 / 1;
-           
-        }
-    .fort
-        {  
-            grid-area: 1 / 1 / 2 / 2;
-
-        }
-    .frioul
-        {  
-            grid-area: 2 / 2 / 1 / 1;
-        }
-    .calanques
-        {  
-            grid-area: 2 / 2 / 2 / 2;
-        }  
-    .nd 
-        {  
-            grid-area: 3 / 3 / 1 / 1;
-        }
-    .longchamp
-        {  
-            grid-area: 3 / 3 / 2 / 2;
+            float:left;
         }
     #Activités figure /*style image +figcaption*/
         {
@@ -992,63 +972,36 @@ ul
     .dispoacti
         {
             display: grid;
-            grid-template-columns: 230px 230px 230px 230px; 
+            grid-template-areas: "portArea fortArea calArea ndArea"
+                             "portArea frioulArea calArea lcArea";
+            grid-template-columns: 225px 225px 225px 225px; 
             grid-template-rows: 200px 200px;
             gap: 10px ;
         }
     .port 
         { 
-            /*grid-row: 1 / 2;
-            grid-column: 1;*/
-            /*grid-area: 1 / 2 / 1 / 1;
-            */grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 1;
-            grid-column-end: 1;
+            grid-area: portArea;
         }
     .fort
         {  
-            /*grid-row: 1;
-            grid-column: 2;
-            /*grid-area: 1 / 1 / 2 / 2;
-            */grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 2;
-            grid-column-end: 2;
+            grid-area: fortArea;
         }
     .frioul
         {  
-            /*grid-row: 2;
-            grid-column: 2;
-            /*grid-area: 2 / 2 / 2 / 2;
-           */grid-row-start: 2;
-            grid-row-end: 2;
-            grid-column-start: 2;
-            grid-column-end: 2;
+            grid-area: frioulArea;
+            margin-top: 20px;
         }
-    figure #calanques
+    .calanques
         {  
-            grid-area: 1 / 2 / 3 / 3;
-            /*grid-row-start: 1;
-            grid-row-end: 2;
-            grid-column-start: 3;
-            grid-column-end: 3;*/
+           grid-area: calArea;
         }  
-    figure #nd 
+    .nd 
         {  
-            grid-area: 1 / 1 / 4 / 4;
-            /*grid-row-start: 1;
-            grid-row-end: 1;
-            grid-column-start: 4;
-            grid-column-end: 4;*/
+            grid-area: ndArea;
         }
-    figure #longchamp
+    .longchamp
         {  
-            grid-area: 2 / 2 / 4 / 4;
-            /*grid-row-start: 2;
-            grid-row-end: 2;
-            grid-column-start: 4;
-            grid-column-end: 4;*/
+            grid-area: lcArea;
         }
     #Activités figure /*style image +figcaption*/
         {
@@ -1062,14 +1015,32 @@ ul
             height: fit-content;
             margin: 0px;
         }
+    #Activités img.tpetiteimg /*format images dans la partie activités*/
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            min-width: 210px;
+            height: 120px;
+            max-height: 120px;
+        }
     #Activités img.petiteimg /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
             min-width: 210px;
-            height: 150px;
-            max-height: 150px;
+            height: 140px;
+            max-height: 140px;
+        }
+    #Activités img.moyimg /*format images dans la partie activités*/
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            min-width: 210px;
+            height: 160px;
+            max-height: 160px;
         }
     #Activités img.grandeimg
         {
