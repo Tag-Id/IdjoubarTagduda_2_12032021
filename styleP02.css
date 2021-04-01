@@ -237,7 +237,7 @@ fieldset /*champ de recherche de localité*/
         justify-content: flex-start;
         align-items: center;
         width: 95%;
-        max-width: 380px;
+        max-width: 360px;
         height: fit-content;
         margin: 10px;
     }
@@ -497,7 +497,7 @@ ul
             flex-flow: row nowrap;
             justify-content: stretch;
             align-items:baseline;
-            max-height: 600px;
+            max-height: 800px;
             width: 100%;
             min-width: 580px;
         }
@@ -508,9 +508,9 @@ ul
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            width: 30%;
-            min-width: fit-content;
-            height:fit-content;
+            width: 35%;
+            min-width: 250px;
+            height: 810px;
             margin-left: 0px;
             padding-bottom: 8px;
         }
@@ -518,11 +518,72 @@ ul
         {
             display: flex;
             width: 95%;
-            min-width: 260px;
+            min-width: 240px;
             justify-content: space-between;
             margin-left: 10px;
         }
-    #Populaires figure /*style image +figcaption*/
+     #Populaires figure /*style image +figcaption*/
+        {
+            min-width: 200px;
+            max-width: 200px;
+            width: 100%;
+            height: fit-content;
+            margin: 20px;
+        }
+    #Populaires img /*format images dans la partie populaires*/
+        {
+            border-top-left-radius:10px;
+            border-top-right-radius:10px;
+            height: 50%;
+            max-height: 150px;
+            width: 98%;
+            max-width: 200px;
+            margin: 2%;
+            
+        }
+    #Populaires figcaption /*organisation du paragraphe de description des images*/
+        {
+            width: 100%;
+            min-width: 180px;
+            max-width: 200px;
+            height: fit-content;
+            margin:0px;
+            margin-left: 5px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    #Populaires .prix:after /*permet de sauter une première ligne avant les étoiles dans la partie les plus populaires*/
+        {
+            display: block;
+            content: "\A";
+        }
+    #Populaires .stars:before /*permet de sauter une deuxième ligne avant les étoiles dans la partie les plus populaires*/
+        {
+            display: block;
+            content:"\A";
+        }
+    #Hébergements /*style de la partie 'hébergements à Marseille'*/
+        {
+            background-color: #f2f2f2;
+            border-radius: 10px/10px;
+            width: 50%;
+            min-width: fit-content;
+            height: 810px;
+            padding: 10px;
+            padding-right:20px; 
+            margin: 0px;
+            margin-right: 10px;   
+        }
+ 
+    .disposition /*structure la partie hébergements*/
+        {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            margin: 0px;
+        }
+    #Hébergements figure /*style image +figcaption*/
         {
             border: 1px solid #F2F2F2;
             border-radius: 20px / 10px;
@@ -532,21 +593,21 @@ ul
             flex-wrap: wrap;
             justify-content: flex-start;
             align-items: center;
-            width: 275px;
+            width: 200px;
             height: fit-content;
             margin: 5px;
             margin-bottom: 20px;
         }
-    #Populaires img /*format images dans la partie les plus populaires*/
+    #Hébergements img /*format images dans la partie les plus populaires*/
         {
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
             width: 40%;
             max-width: 120px;
-            height: 120px;
+            height: 80px;
             margin: 5px;
         }
-    #Populaires figcaption /*organisation du paragraphe de description des images*/
+    #Hébergements figcaption /*organisation du paragraphe de description des images*/
         {
             display: flex;
             flex-direction: column;
@@ -556,71 +617,6 @@ ul
             margin: 0px;
             margin-left: 5%;
             font-size: 13px;
-            line-height: 18px;
-        }
-   
-    #Hébergements /*style de la partie 'hébergements à Marseille'*/
-        {
-            background-color: #f2f2f2;
-            border-radius: 10px/10px;
-            width: 60%;
-            min-width: fit-content;
-            height: 520px;
-            padding: 10px;
-            padding-right:20px; 
-            margin: 0px;
-            margin-right: 10px;   
-        }
-    .cannebière
-        {grid-area: un;}
-    .hport
-        {grid-area: deux;}
-    .mouettes
-        {grid-area: trois;}
-    .mer
-        {grid-area: quatre;}
-    .panier
-        {grid-area: cinq;}
-    .amina
-        {grid-area: six;}
-    .disposition /*structure la partie hébergements*/
-        {
-            display: grid;
-            grid-template-areas:
-                'un deux'
-                'trois quatre'
-                'cinq six';
-            grid-gap: 15px;
-            padding-bottom: 20px;
-            margin: 0px;
-        }
-    #Hébergements figure /*style image +figcaption*/
-        {
-            min-width: 150px;
-            max-width: 150px;
-            width: 100%;
-            height: fit-content;
-            margin: 0px;
-        }
-    #Hébergements img /*format images dans la partie hébergements*/
-        {
-            border-top-left-radius:10px;
-            border-top-right-radius:10px;
-            height: 50%;
-            max-height: 60px;
-            width: 98%;
-            max-width: 150px;
-            margin: 2%;
-        }
-    #Hébergements figcaption /*organisation du paragraphe de description des images*/
-        {
-            width: 100%;
-            min-width: 180px;
-            max-width: 200px;
-            height: fit-content;
-            margin:0px;
-            margin-left: 5px;
-            font-size: 12px;
             line-height: 18px;
         }
     .plus
@@ -652,7 +648,8 @@ ul
             display: grid;
             grid-template-columns: 300px 300px; 
             grid-template-rows: 200px 200px 200px;
-            gap: 10px ;
+            gap: 30px ;
+            margin-left: 20px;
         
         }
     .port 
@@ -718,7 +715,8 @@ ul
             flex-direction: row;
             justify-content: flex-start;
             background-color: #F2F2F2;
-            min-width: 400px;
+            min-width: 600px;
+            margin-top: 20px;
         }
     footer div
         {
