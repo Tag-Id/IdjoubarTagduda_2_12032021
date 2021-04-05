@@ -31,7 +31,7 @@ header /*style de l'en-tête en format mobile*/
     {
         text-decoration: none;
         color: #0065FC;
-        font-weight: bold;
+        font-weight: 700;
     }  
 .navigation /*position des liens de navigation*/
     {   
@@ -47,6 +47,7 @@ header /*style de l'en-tête en format mobile*/
 .gris /*style des liens de navigation*/
     {
         text-decoration: none;
+        padding-bottom: 10px;
         color: black;
         border-bottom: 3px #F2F2F2 solid; 
         width: 100%;
@@ -66,7 +67,7 @@ header /*style de l'en-tête en format mobile*/
 h1 /*style du titre*/
     {
         font-size: 23px;
-        font-weight: bolder; 
+        font-weight: 700; 
         width: 100%;
         min-width: 325px;
     }
@@ -78,7 +79,7 @@ h2 /*style des titres de section*/
 h3 /*style du titre 'filtres'*/
     {
         font-size: 16px;
-        font-weight: bolder; 
+        font-weight: 700; 
         margin-top: 20px;
         margin-bottom: 10px;
     }
@@ -86,7 +87,6 @@ p  /*police de la description*/
     {
        display: flex; 
        align-items: baseline;
-       /*text-align: start;*/
     }
 fieldset /*champ de recherche de localité*/
     {
@@ -96,7 +96,6 @@ fieldset /*champ de recherche de localité*/
         border: 1px #DEEBFF solid;
         border-radius: 10px/10px;
         padding: 0px;
-        /*margin: 10px;*/
         width: fit-content;
         height: fit-content;
     }
@@ -128,7 +127,7 @@ fieldset /*champ de recherche de localité*/
     }
 .fa-search /*affiche le bouton icone recherche pour la version mobile*/
     {
-        font-family: FontAwesome, 'Raleway';
+        font-family: FontAwesome;
         color:  white;
         font-weight: bold;
         border: 1px solid  #0065FC;
@@ -142,7 +141,6 @@ fieldset /*champ de recherche de localité*/
     } 
 #filtres /*style de la zone de filtres*/
     {  
-        font-weight: bold;
         display: flex;
         flex-wrap: wrap;
         margin: 5px; 
@@ -150,7 +148,7 @@ fieldset /*champ de recherche de localité*/
     }
 #filtrant /*style de la zone de filtres*/
     {  
-        font-weight: bold;
+        font-weight: 700;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
@@ -269,7 +267,7 @@ fieldset /*champ de recherche de localité*/
     }
 strong /*éléments en gras sur la desccription des images*/
     {  
-        font-weight: bold;
+        font-weight: bolder;
     }
 .prix /*évite la séparation de € par rapport au reste*/
     {
@@ -373,7 +371,7 @@ strong /*éléments en gras sur la desccription des images*/
     {   
         margin: 10px;
         margin-left: 20px;
-        font-weight: bolder;
+        font-weight: 800;
         font-size: 15px;
         line-height: 25px;
         width: 100%;
@@ -400,7 +398,7 @@ ul
         padding-left: 0px;
     }
 
-@media all and (min-width: 600px) and (max-width: 959px)/*particularité des écrans tablettes */
+@media all and (min-width: 750px) and (max-width: 959px)/*particularité des écrans tablettes */
     {
     body 
         {
