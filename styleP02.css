@@ -241,7 +241,7 @@ fieldset /*champ de recherche de localité*/
         justify-content: flex-start;
         align-items: center;
         width: 95%;
-        max-width: 360px;
+        max-width: 500px;
         height: fit-content;
         margin: 10px;
     }
@@ -250,7 +250,7 @@ fieldset /*champ de recherche de localité*/
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
         width: 40%;
-        max-width: 200px;
+        max-width: 350px;
         height: 140px;
         margin: 5px;
         object-fit: cover;
@@ -302,9 +302,9 @@ strong /*éléments en gras sur la desccription des images*/
         border-radius: 20px / 10px;
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
-        width: 90%;
+        width: 95%;
         min-width: 325px;
-        max-width: 380px;
+        max-width: 500px;
         height: fit-content;
         margin: 5px;
         margin-bottom: 20px;
@@ -354,9 +354,9 @@ strong /*éléments en gras sur la desccription des images*/
         border-radius: 20px / 10px;
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
-        width: 90%;
+        width: 95%;
         min-width: 325px;
-        max-width: 380px;
+        max-width: 500px;
         height: fit-content;
         margin: 10px;
         margin-bottom: 20px;
@@ -384,14 +384,16 @@ strong /*éléments en gras sur la desccription des images*/
 footer /*style du pied de page*/
     {
         background-color: #F2F2F2;
+        width: 105%;
         min-width: 320px;
         margin: 0px;
-        padding: 10px;
+        margin-left: -20px;
+        padding-right: 60px;
     }
 footer div
     {
         padding: 5px;
-        padding-left: 5%;
+        padding-left: 40px;
     }
 ul
     {
@@ -448,13 +450,14 @@ ul
             padding-top: 20px;
             padding-right: 0px;
         }
+               
     .gris:hover /*changement de style des liens de navigation au passage*/
         {
             text-decoration: none;
             color: #0065FC;
             border-top: 3px #0065FC solid;
             border-bottom: none;
-            width: 40%;
+            width: 580px;
         }
     h1
         {
@@ -489,6 +492,11 @@ ul
             margin: 20px;
             margin-left: 0px;  
         }
+    #filtrant
+        {
+            font-size: 0.9em;
+            font-weight: 700;
+        }
     h3 
         {
             padding-right: 20px;
@@ -501,12 +509,13 @@ ul
     #Héber /*style commun aux 2 parties hébergements*/
         {
             display: flex;
-            flex-flow: row nowrap;
+            flex-direction: column-reverse;
             justify-content: stretch;
             align-items:baseline;
             max-height: 800px;
             width: 100%;
             min-width: 580px;
+            margin-top: 30px;
         }
     #Populaires /*style de la partie les plus populaires*/
         {
@@ -514,12 +523,14 @@ ul
             border-radius: 10px/10px;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
-            width: 35%;
-            min-width: 250px;
-            height: 810px;
+            flex-direction: row;
+            width: 100%;
+            min-width: 590px;
+            height: 300px;
             margin-left: 0px;
+            padding:0px;
             padding-bottom: 8px;
+            padding-right: 5px;
         }
     .titreaside /*format du titre de la partie 'les plus populaires'*/
         {
@@ -531,11 +542,11 @@ ul
         }
      #Populaires figure /*style image +figcaption*/
         {
-            min-width: 200px;
-            max-width: 200px;
-            width: 100%;
-            height: fit-content;
-            margin: 20px;
+            min-width: 100px;
+            max-width: 150px;
+            width: 95%;
+            height: 220px;
+            margin: 10px;
         }
     #Populaires img /*format images dans la partie populaires*/
         {
@@ -544,16 +555,17 @@ ul
             height: 50%;
             max-height: 150px;
             width: 98%;
-            max-width: 200px;
+            min-width: 100px;
+            max-width: 150px;
             margin: 2%;
             
         }
     #Populaires figcaption /*organisation du paragraphe de description des images*/
         {
             width: 100%;
-            min-width: 180px;
-            max-width: 200px;
-            height: fit-content;
+            min-width: 150px;
+            max-width: 230px;
+            height: 80px;
             margin:0px;
             margin-left: 5px;
             font-size: 12px;
@@ -573,44 +585,53 @@ ul
         {
             background-color: #f2f2f2;
             border-radius: 10px/10px;
-            width: 50%;
-            min-width: fit-content;
-            height: 810px;
-            padding: 10px;
-            padding-right:20px; 
+            width: 100%;
+            min-width: 590px;
+            height: 600px;
+            padding: 0px;
+            padding-top: 5px;
+            padding-left: 5px; 
             margin: 0px;
-            margin-right: 10px;   
+            margin-top: 10px;   
         }
- 
+    .cannebière
+        {grid-area: un;}
+    .hport
+        {grid-area: deux;}
+    .mouettes
+        {grid-area: trois;}
+    .mer
+        {grid-area: quatre;}
+    .panier
+        {grid-area: cinq;}
+    .amina
+        {grid-area: six;}
     .disposition /*structure la partie hébergements*/
         {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-areas:
+                'un deux trois'
+                'quatre cinq six';
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 180px 180px;
+            grid-gap: 15px;
             padding-bottom: 20px;
             margin: 0px;
         }
     #Hébergements figure /*style image +figcaption*/
         {
-            border: 1px solid #F2F2F2;
-            border-radius: 20px / 10px;
-            box-shadow: 5px  5px  5px rgb(190, 190, 190);
-            background-color: white;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: center;
-            width: 200px;
+            width: 92%;
+            min-width: 80px;
+            max-width: 280px;
             height: fit-content;
             margin: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     #Hébergements img /*format images dans la partie les plus populaires*/
         {
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
-            width: 40%;
-            max-width: 120px;
+            width: 97%;
             height: 80px;
             margin: 5px;
         }
@@ -618,8 +639,8 @@ ul
         {
             display: flex;
             flex-direction: column;
-            width: 45%;
-            max-width: 200px;
+            width: 100%;
+            max-width: 150px;
             height: fit-content;
             margin: 0px;
             margin-left: 5%;
@@ -645,19 +666,45 @@ ul
             align-items: flex-start;
             width: 100%;
             min-width: 580px;
-            height: 650px;
-            margin-top: 40px;
-            margin-bottom: 60px;
+            height: 500px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
-    
+
     .dispoacti
         {
             display: grid;
-            grid-template-columns: 300px 300px; 
-            grid-template-rows: 200px 200px 200px;
-            gap: 30px ;
-            margin-left: 20px;
-            float:left;
+            grid-template-areas:
+                "portArea ndArea ndArea lcArea"
+                "frioulArea calArea calArea fortArea";
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            gap: 20px;
+        }
+    .port 
+        { 
+            grid-area: portArea;
+        }
+    .fort
+        {  
+            grid-area: fortArea;
+        }
+    .frioul
+        {  
+            grid-area: frioulArea;
+            /*margin-top: 20px;*/
+        }
+    .calanques
+        {  
+           grid-area: calArea;
+        }  
+    .nd 
+        {  
+            grid-area: ndArea;
+        }
+    .longchamp
+        {  
+            grid-area: lcArea;
         }
     #Activités figure /*style image +figcaption*/
         {
@@ -666,24 +713,15 @@ ul
             box-shadow: 5px  5px  5px rgb(190, 190, 190);
             background-color: white;
             width: 100%;
-            min-width: 210px;
-            max-width: 300px;
-            height: fit-content;
-            max-height: 200px;
+            min-width: 150px;
+            max-width: 500px;
+            height: 200px;
             margin: 0px;
         }
-    #Activités img /*format images dans la partie activités*/
-        {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            width: 100%;
-            min-width: 200px;
-            height: 150px;
-            max-height: 150px;
-        }
+    
     #Activités figcaption /*particularité dans le descriptif des images des activités*/
         {   
-            margin: 2%;
+            margin: 10px;
             margin-left: 5%;
             font-weight: bold;
             width: 100%;
@@ -698,12 +736,12 @@ ul
             background-color: #F2F2F2;
             min-width: 600px;
             margin-top: 20px;
+            padding-left: 20px;
         }
     footer div
         {
             padding: 2%;
-            padding-right: 7%;
-            padding-left: 5%;
+            padding-right: 5%;
         }
     ul
         {
@@ -722,9 +760,9 @@ ul
         {
             display: flex;
             flex-wrap: nowrap;
-            justify-content: stretch;
-            align-items: center;
-            min-width: 960px;
+            justify-content: space-between;
+            align-items: baseline;
+            min-width: 950px;
             width: 100%;
             margin: 0px;
             padding: 0px;
@@ -745,7 +783,7 @@ ul
         }
     #reservia 
         {
-            padding-right: 42%;
+            padding-right: 49%;
             margin-left: 0px;
         }
     header > #reservia /*changement d'ordre des éléments de l'en-tête*/
@@ -834,7 +872,8 @@ ul
             flex-wrap: wrap;
             flex-direction: column;
             width: 30%;
-            min-width: fit-content;
+            min-width: 250px;
+            max-width: 500px;
             height:fit-content;
             margin-left: 0px;
             padding-bottom: 8px;
@@ -857,7 +896,9 @@ ul
             flex-wrap: wrap;
             justify-content: flex-start;
             align-items: center;
-            width: 275px;
+            width: 80%;
+            min-width: 240px;
+            max-width: 600px;
             height: fit-content;
             margin: 5px;
             margin-bottom: 20px;
@@ -866,8 +907,9 @@ ul
         {
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
-            width: 40%;
-            max-width: 120px;
+            width: 30%;
+            min-width: 100px;
+            max-width: 500px;
             height: 120px;
             margin: 5px;
         }
@@ -888,8 +930,8 @@ ul
         {
             background-color: #f2f2f2;
             border-radius: 10px/10px;
-            width: 60%;
-            min-width: fit-content;
+            width: 80%;
+            min-width: 550px;
             height: 520px;
             padding: 10px;
             padding-right:20px; 
@@ -914,14 +956,17 @@ ul
             grid-template-areas:
                 'un deux trois'
                 'quatre cinq six';
-            grid-gap: 15px;
-            padding-bottom: 50px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px;
+            grid-column-gap: 5%;
+            grid-row-gap: 5px ;
+            padding-bottom: 25px;
             margin: 0px;
         }
     #Hébergements figure /*style image +figcaption*/
         {
-            min-width: fit-content;
-            max-width: 200px;
+            min-width: 180px;
+            max-width: 600px;
             width: 100%;
             height: fit-content;
             margin: 0px;
@@ -931,16 +976,13 @@ ul
             border-top-left-radius:10px;
             border-top-right-radius:10px;
             height: 50%;
-            max-height: 80px;
+            max-height: 100px;
             width: 98%;
-            max-width: 180px;
-            margin: 2%;
+            margin: 5px;
         }
     #Hébergements figcaption /*organisation du paragraphe de description des images*/
         {
             width: 100%;
-            min-width: 180px;
-            max-width: 200px;
             height: fit-content;
             margin-left: 5%;
             font-size: 13px;
@@ -964,10 +1006,10 @@ ul
             justify-content: space-between;
             align-items: flex-start;
             width: 100%;
-            min-width: 960px;
+            min-width: 950px;
             height: 500px;
-            margin-top: 40px;
-            margin-bottom: 60px;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
     
     .dispoacti
@@ -975,9 +1017,11 @@ ul
             display: grid;
             grid-template-areas: "portArea fortArea calArea ndArea"
                              "portArea frioulArea calArea lcArea";
-            grid-template-columns: 225px 225px 225px 225px; 
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
             grid-template-rows: 200px 200px;
-            gap: 10px ;
+            gap: 10px;
+            grid-column-gap: 20px;
+            width: 100%;
         }
     .port 
         { 
@@ -990,7 +1034,7 @@ ul
     .frioul
         {  
             grid-area: frioulArea;
-            margin-top: 20px;
+            margin-top: 30px;
         }
     .calanques
         {  
@@ -1010,45 +1054,57 @@ ul
             border-radius: 20px / 10px;
             box-shadow: 5px  5px  5px rgb(190, 190, 190);
             background-color: white;
-            width: 100%;
+            width: 98%;
             min-width: 210px;
-            max-width: 220px;
+            max-width: 600px;
             height: fit-content;
             margin: 0px;
         }
-    #Activités img.tpetiteimg /*format images dans la partie activités*/
+    #Activités img.iles /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            min-width: 210px;
-            height: 120px;
-            max-height: 120px;
+            height: 110px;
+            max-height: 110px;
         }
-    #Activités img.petiteimg /*format images dans la partie activités*/
+    #Activités img.cath /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            min-width: 210px;
             height: 140px;
             max-height: 140px;
         }
-    #Activités img.moyimg /*format images dans la partie activités*/
+    #Activités img.parclc /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            min-width: 210px;
-            height: 160px;
-            max-height: 160px;
+            height: 140px;
+            max-height: 140px;
         }
-    #Activités img.grandeimg
+    #Activités img.pom /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            min-width: 210px;
+            height: 170px;
+            max-height: 170px;
+        }
+    #Activités img.vport
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 350px;
+            max-height: 350px;
+        }
+    #Activités img.parccal
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
             height: 350px;
             max-height: 350px;
         }
@@ -1057,6 +1113,7 @@ ul
             margin: 2%;
             margin-left: 5%;
             font-weight: bold;
+            font-size: 13px;
             width: 100%;
             height: fit-content;
         }
@@ -1068,12 +1125,13 @@ ul
             justify-content: flex-start;
             background-color: #F2F2F2;
             min-width: 400px;
+            margin-left: -30px;
         }
     footer div
         {
             padding: 2%;
-            padding-right: 7%;
-            padding-left: 5%;
+            padding-right: 10%;
+            padding-left: 40px;
         }
     ul
         {
