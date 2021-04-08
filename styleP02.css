@@ -97,6 +97,7 @@ fieldset /*champ de recherche de localité*/
         border-radius: 10px/10px;
         padding: 0px;
         width: fit-content;
+        max-width: 300px;
         height: fit-content;
     }
 .saisie /*retrait de la bordure du champs de saisie*/
@@ -112,6 +113,7 @@ fieldset /*champ de recherche de localité*/
     }
 .saisie::placeholder
     {
+        font-family: 'Raleway';
         background-color: white;
         font-weight: bold;
         color: black;
@@ -692,7 +694,6 @@ ul
     .frioul
         {  
             grid-area: frioulArea;
-            /*margin-top: 20px;*/
         }
     .calanques
         {  
@@ -882,7 +883,7 @@ ul
         {
             display: flex;
             width: 95%;
-            min-width: 260px;
+            min-width: 240px;
             justify-content: space-between;
             margin-left: 10px;
         }
