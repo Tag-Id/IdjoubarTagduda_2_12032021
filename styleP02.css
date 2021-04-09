@@ -773,7 +773,9 @@ ul
             justify-self: flex-end;
             text-align: center;
             min-width: fit-content;
-            width: 250px;
+            width: 100%;
+            min-width: 200px;
+            max-width: 700px;
             padding-top: 0px;
         }    
     .inscrire
@@ -805,7 +807,9 @@ ul
             color: black;
             border-top: 3px #F2F2F2 solid; 
             border-bottom: none;
-            width: 150px;
+            width: 100%;
+            min-width: 150px;
+            max-width: 400px;
             padding-top: 20px;
             padding-right: 0px;
         }
@@ -815,7 +819,11 @@ ul
             color: #0065FC;
             border-top: 3px #0065FC solid;
             border-bottom: none;
-            width: 40%;
+            width: 100%;
+            min-width: 150px;
+            max-width: 400px;
+            padding-top: 20px;
+            padding-right: 0px;
         }
     .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
         {
