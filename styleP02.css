@@ -19,8 +19,8 @@ header /*style de l'en-tête en format mobile*/
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        min-width: 320px;
-        padding-left: 15px;
+        min-width: 310px;
+        margin: 5px;
     }   
 #reservia /*taille du logo*/
     {  
@@ -63,8 +63,13 @@ header /*style de l'en-tête en format mobile*/
     }
 #presentation
     {
-        width: 100%;
-        min-width: 320px;
+        width: 96%;
+        min-width: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 8%;
     }
 h1 /*style du titre*/
     {
@@ -72,7 +77,6 @@ h1 /*style du titre*/
         font-weight: 700; 
         width: 90%;
         min-width: 300px;
-        padding-left: 20px;
         margin-top: 10px;
         margin-bottom: 0px;
     }
@@ -94,11 +98,6 @@ h3 /*style du titre 'filtres'*/
        margin: 0px;
        margin-top: 0px;
        margin-bottom: 30px;
-       padding-left: 20px;
-    }
-form
-    {
-        padding-left: 20px;
     }
 fieldset /*champ de recherche de localité*/
     {
@@ -158,10 +157,11 @@ fieldset /*champ de recherche de localité*/
         flex-wrap: wrap;
         margin: 0px; 
         margin-bottom: 0px;
-        padding-left: 15px; 
+        /*padding-left: 20px; */
     }
 #filtrant /*style de la zone de filtres*/
     {  
+        font-size:15px;
         font-weight: 700;
         display: flex;
         flex-wrap: wrap;
@@ -207,7 +207,7 @@ fieldset /*champ de recherche de localité*/
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        padding-left: 20px;
+        width: 85%;
     }
 
     /*couleur des étoiles*/
@@ -229,9 +229,9 @@ fieldset /*champ de recherche de localité*/
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         width: 100%;
-        min-width: 320px;
+        min-width: 310px;
     }
 #Populaires /*style de la partie les plus populaires*/
     {
@@ -240,14 +240,24 @@ fieldset /*champ de recherche de localité*/
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-width: 320px;
+        align-items: baseline;
+        width: 96%;
+        min-width: 300px;
         height: fit-content;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
+        padding-left: 7%;
+        padding-top: 10px;
+        padding-bottom: 30px;
     }
+#dispopop
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 85%;
+        min-width: 290px;
+        margin: 0px;
+    }
+    
 .titreaside /*format du titre de la partie 'les plus populaires'*/
     {
         display: flex;
@@ -255,7 +265,7 @@ fieldset /*champ de recherche de localité*/
         min-width: 280px;
         align-items: baseline;
         justify-content: space-between;
-        margin-right: 15px;
+        padding-left: 10px;
     }
 #Populaires figure /*style image +figcaption*/
     {
@@ -264,22 +274,24 @@ fieldset /*champ de recherche de localité*/
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-wrap: nowrap;
+        justify-content: center;
         align-items: center;
-        width: 85%;
+        width: 100%;
         min-width: 280px;
         max-width: 500px;
         height: fit-content;
-        margin: 10px;
+        margin: 0px;
+        margin-top: 20px;
     }
 #Populaires img /*format images dans la partie les plus populaires*/
     {
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
         width: 40%;
+        min-width: 120px;
         max-width: 350px;
-        height: 150px;
+        height: 130px;
         margin: 5px;
         object-fit: cover;
      }
@@ -288,10 +300,12 @@ fieldset /*champ de recherche de localité*/
         font-size: 14px;
         display: flex;
         flex-direction: column;
-        width: 45%;
-        max-width: 200px;
+        flex-wrap: wrap;
+        width: 85%;
+        min-width: 150px;
+        max-width: 210px;
         height: fit-content;
-        margin: 5%;
+        margin: 2%;
         line-height: 21px;
     }
 strong /*éléments en gras sur la desccription des images*/
@@ -317,13 +331,18 @@ strong /*éléments en gras sur la desccription des images*/
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-width: 320px;
+        align-items: baseline;
+        width: 96%;
+        min-width: 300px;
         height: fit-content;
-        margin: 10px;
-        margin-top: 20px;
-        padding-left: 40px;
+        padding-left: 7%;
+        padding-top: 10px;
+    }
+.dispohéber
+    {
+        flex-direction: column;
+        width: 100%;
+        min-width: 290px;
     }
 #Hébergements figure /*style image +figcaption*/
     {
@@ -363,21 +382,29 @@ strong /*éléments en gras sur la desccription des images*/
         font-weight: bold;
         text-decoration: none;
         color: black;
-        margin: 2%;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 #Activités /*style de la partie 'activités à Marseille'*/
     {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        min-width: 320px;
+        align-items: baseline;
+        width: 96%;
+        min-width: 300px;
         height: fit-content;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 30px;
+        padding-left: 7%;
+    }
+.dispoacti
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+        min-width: 290px;
+        margin: 0px;
     }
 #Activités figure /*style image +figcaption*/
     {
@@ -400,6 +427,11 @@ strong /*éléments en gras sur la desccription des images*/
         height: 80%;
         max-height: 150px;
         object-fit: cover;
+        object-position: top;
+    }
+#Activités img.pom
+    {
+        object-position: center;
     }
 #Activités figcaption /*particularité dans le descriptif des images des activités*/
     {   
@@ -416,13 +448,21 @@ footer /*style du pied de page*/
     {
         background-color: #F2F2F2;
         width: 100%;
-        min-width: 320px;
-        padding: 20px;
+        min-width: 310px;
+        padding: 5px;
     }
 footer div
     {
         padding: 10px;
         padding-left: 40px;
+    }
+footer div h3
+    {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 0px;
     }
 ul
     {
@@ -560,6 +600,15 @@ ul
             padding:0px;
             padding-bottom: 8px;
             padding-right: 5px;
+        }
+    #dispopop
+        {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 95%;
         }
     .titreaside /*format du titre de la partie 'les plus populaires'*/
         {
