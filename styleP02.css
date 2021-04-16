@@ -476,7 +476,7 @@ ul
     {
     body 
         {
-            margin: 2%;
+            margin: 0%;
         }
     header /*style de l'en-tête en format mobile*/
         {
@@ -527,6 +527,16 @@ ul
             border-top: 3px #0065FC solid;
             border-bottom: none;
             width: 580px;
+        }
+    #presentation
+        {
+            width: 98%;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 2%;
         }
     h1
         {
@@ -582,7 +592,7 @@ ul
             justify-content: stretch;
             align-items:baseline;
             max-height: 800px;
-            width: 100%;
+            width: 98%;
             min-width: 580px;
             margin-top: 30px;
         }
@@ -593,13 +603,16 @@ ul
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
-            width: 100%;
+            width: 98%;
             min-width: 590px;
             height: 300px;
             margin-left: 0px;
-            padding:0px;
-            padding-bottom: 8px;
-            padding-right: 5px;
+            padding: 5px;
+            padding-bottom: 20px;
+        }
+    aside
+        {
+            display: contents;
         }
     #dispopop
         {
@@ -608,43 +621,51 @@ ul
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
-            width: 95%;
+            width: 100%;
+            min-width: 600px;
         }
     .titreaside /*format du titre de la partie 'les plus populaires'*/
         {
             display: flex;
-            width: 95%;
+            width: 99%;
             min-width: 240px;
             justify-content: space-between;
-            margin-left: 10px;
+            margin-right: 20px;
         }
      #Populaires figure /*style image +figcaption*/
         {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
             min-width: 100px;
-            max-width: 150px;
-            width: 95%;
-            height: 220px;
-            margin: 10px;
+            max-width: 260px;
+            height: fit-content;
+            margin-right: 20px;
+            margin-top: 0px;
+            padding:5px;
         }
     #Populaires img /*format images dans la partie populaires*/
         {
             border-top-left-radius:10px;
             border-top-right-radius:10px;
-            height: 50%;
-            max-height: 150px;
+            height: 120px;
             width: 98%;
             min-width: 100px;
-            max-width: 150px;
-            margin: 2%;
+            max-width: 260px;
+            margin: 0px;
             
         }
     #Populaires figcaption /*organisation du paragraphe de description des images*/
         {
             width: 100%;
-            min-width: 150px;
-            max-width: 230px;
+            min-width: 100px;
+            max-width: 260px;
             height: 80px;
             margin:0px;
+            margin-top: 10px;
             margin-left: 5px;
             font-size: 12px;
             line-height: 18px;
@@ -663,12 +684,10 @@ ul
         {
             background-color: #f2f2f2;
             border-radius: 10px/10px;
-            width: 100%;
+            width: 98%;
             min-width: 590px;
             height: 600px;
-            padding: 0px;
-            padding-top: 5px;
-            padding-left: 5px; 
+            padding: 5px;
             margin: 0px;
             margin-top: 10px;   
         }
@@ -692,8 +711,8 @@ ul
                 'quatre cinq six';
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 180px 180px;
-            grid-gap: 15px;
-            padding-bottom: 20px;
+            grid-row-gap: 30px;
+            padding-bottom: 0px;
             margin: 0px;
         }
     #Hébergements figure /*style image +figcaption*/
@@ -710,7 +729,7 @@ ul
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
             width: 97%;
-            height: 80px;
+            height: 200px;
             margin: 5px;
         }
     #Hébergements figcaption /*organisation du paragraphe de description des images*/
@@ -742,11 +761,12 @@ ul
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            width: 100%;
-            min-width: 580px;
+            width: 96%;
+            min-width: 590px;
             height: 500px;
             margin-top: 20px;
             margin-bottom: 10px;
+            padding-left: 0%;
         }
 
     .dispoacti
@@ -811,6 +831,7 @@ ul
             flex-direction: row;
             justify-content: flex-start;
             background-color: #F2F2F2;
+            width: 98%;
             min-width: 600px;
             margin-top: 20px;
             padding-left: 20px;
