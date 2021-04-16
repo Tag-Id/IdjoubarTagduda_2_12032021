@@ -258,7 +258,7 @@ fieldset /*champ de recherche de localité*/
         margin: 0px;
     }
     
-.titreaside /*format du titre de la partie 'les plus populaires'*/
+.titreaside /*format des titres de la partie 'hébergements'*/
     {
         display: flex;
         width: 85%;
@@ -396,6 +396,15 @@ strong /*éléments en gras sur la desccription des images*/
         margin-top: 20px;
         margin-bottom: 20px;
         padding-left: 7%;
+    }
+.titreaside2 /*format des titres de la partie 'hactivités'*/
+    {
+        display: flex;
+        width: 85%;
+        min-width: 280px;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-left: 10px;
     }
 .dispoacti
     {
@@ -624,7 +633,7 @@ ul
             width: 100%;
             min-width: 600px;
         }
-    .titreaside /*format du titre de la partie 'les plus populaires'*/
+    .titreaside /*format des titres de la partie 'hebergements'*/
         {
             display: flex;
             width: 99%;
@@ -768,7 +777,14 @@ ul
             margin-bottom: 10px;
             padding-left: 0%;
         }
-
+    .titreaside2 /*format des titres de la partie 'activités'*/
+        {
+            display: flex;
+            width: 99%;
+            min-width: 240px;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
     .dispoacti
         {
             display: grid;
@@ -857,7 +873,7 @@ ul
             justify-content: space-between;
             align-items: baseline;
             min-width: 950px;
-            width: 100%;
+            width: 98%;
             margin: 0px;
             padding: 0px;
         } 
@@ -918,6 +934,16 @@ ul
             padding-top: 20px;
             padding-right: 0px;
         }
+    #presentation
+        {
+            width: 98%;
+            min-width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 2%;
+        }
     .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
         {
             display: none; 
@@ -963,8 +989,12 @@ ul
             justify-content: stretch;
             align-items:baseline;
             max-height: 600px;
-            width: 100%;
+            width: 98%;
             min-width: 930px;
+        }
+    aside
+        {
+            width: 100%;
         }
     #Populaires /*style de la partie les plus populaires*/
         {
@@ -978,15 +1008,23 @@ ul
             max-width: 500px;
             height:fit-content;
             margin-left: 0px;
-            padding-bottom: 8px;
+            padding-bottom: 22px;
+            padding-left: 0%;
         }
-    .titreaside /*format du titre de la partie 'les plus populaires'*/
+    .titreaside /*format des titres de la partie 'hebergements'*/
         {
             display: flex;
-            width: 95%;
-            min-width: 240px;
+            width: 90%;
+            min-width: 150px;
             justify-content: space-between;
-            margin-left: 10px;
+            margin-left: 2%;
+            margin-bottom: 10px;
+        }
+    #dispopop 
+        {
+            width: 96%;
+            margin-right: 2%;
+            margin-left: 2%;
         }
     #Populaires figure /*style image +figcaption*/
         {
@@ -995,11 +1033,12 @@ ul
             box-shadow: 5px  5px  5px rgb(190, 190, 190);
             background-color: white;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
+            flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: center;
-            width: 80%;
-            min-width: 240px;
+            width: 90%;
+            min-width: 200px;
             max-width: 600px;
             height: fit-content;
             margin: 5px;
@@ -1009,22 +1048,22 @@ ul
         {
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
-            width: 30%;
+            width: 40%;
             min-width: 100px;
             max-width: 500px;
-            height: 120px;
+            height: 100px;
             margin: 5px;
         }
     #Populaires figcaption /*organisation du paragraphe de description des images*/
         {
             display: flex;
             flex-direction: column;
-            width: 45%;
-            max-width: 200px;
+            width: 100%;
+            max-width: 190px;
             height: fit-content;
             margin: 0px;
-            margin-left: 5%;
-            font-size: 13px;
+            margin-left: 1%;
+            font-size: 12.5px;
             line-height: 18px;
         }
    
@@ -1032,13 +1071,16 @@ ul
         {
             background-color: #f2f2f2;
             border-radius: 10px/10px;
-            width: 80%;
+            width: 70%;
             min-width: 550px;
-            height: 520px;
-            padding: 10px;
-            padding-right:20px; 
+            height: fit-content;
+            padding: 0px;
+            padding-right:0px; 
             margin: 0px;
             margin-right: 10px;   
+            padding-left: 0%;
+            padding-top: 10px;
+            padding-bottom: 30px;
         }
     .cannebière
         {grid-area: un;}
@@ -1059,11 +1101,16 @@ ul
                 'un deux trois'
                 'quatre cinq six';
             grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 200px 200px;
-            grid-column-gap: 5%;
-            grid-row-gap: 5px ;
+            grid-template-rows: 1fr 1fr;
+            grid-column-gap: 2%;
+            grid-row-gap: 10px ;
             padding-bottom: 25px;
+            width: 96%;
+            min-width: 600px;
+            max-width: 1200px;
             margin: 0px;
+            margin-right: 2%;
+            margin-left: 2%;
         }
     #Hébergements figure /*style image +figcaption*/
         {
@@ -1077,8 +1124,8 @@ ul
         {
             border-top-left-radius:10px;
             border-top-right-radius:10px;
-            height: 50%;
-            max-height: 100px;
+            height: 60%;
+            max-height: 90px;
             width: 98%;
             margin: 5px;
         }
@@ -1088,7 +1135,7 @@ ul
             height: fit-content;
             margin-left: 5%;
             font-size: 13px;
-            line-height: 20px;
+            line-height: 18px;
         }
     .plus
         {
@@ -1097,8 +1144,7 @@ ul
             text-decoration: none;
             color: black;
             margin: 0px;
-            margin-left: 10px;
-            margin-top: 50px;
+            margin-left: 2%;
         }
    #Activités /*style de la partie 'activités à Marseille'*/
          {
@@ -1107,13 +1153,26 @@ ul
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: flex-start;
-            width: 100%;
+            width: 98%;
             min-width: 950px;
             height: 500px;
             margin-top: 20px;
             margin-bottom: 10px;
+            padding-left: 0%;
         }
-    
+    .titreaside2 /*format du titre de la partie 'activités'*/
+        {
+            display: flex;
+            width: 90%;
+            min-width: 150px;
+            justify-content: space-between;
+            margin-left: 0%;
+            margin-bottom: 0px;
+        }
+    h2
+        {
+            margin-bottom: 0px;
+        }
     .dispoacti
         {
             display: grid;
@@ -1226,13 +1285,13 @@ ul
             flex-direction: row;
             justify-content: flex-start;
             background-color: #F2F2F2;
-            min-width: 400px;
+            width: 99%;
+            min-width: 600px;
         }
     footer div
         {
             padding: 2%;
             padding-right: 10%;
-            padding-left: 40px;
         }
     ul
         {
