@@ -20,7 +20,7 @@ header /*style de l'en-tête en format mobile*/
         align-items: center;
         width: 100%;
         min-width: 310px;
-        margin: 5px;
+        margin: 10px;
     }   
 #reservia /*taille du logo*/
     {  
@@ -39,7 +39,7 @@ header /*style de l'en-tête en format mobile*/
         justify-self: flex-end;
         text-align: center;
         width: 100%;
-        min-width: 320px; 
+        min-width: 310px; 
         padding-top: 20px;
         margin-bottom: 10px;
     }
@@ -51,7 +51,7 @@ header /*style de l'en-tête en format mobile*/
         color: black;
         border-bottom: 3px #F2F2F2 solid; 
         width: 100%;
-        min-width: 160px;
+        min-width: 150px;
     }
 .gris:hover /*changement de style des liens de navigation au passage*/
     {
@@ -59,7 +59,7 @@ header /*style de l'en-tête en format mobile*/
         color: #0065FC;
         border-bottom: 3px #0065FC solid;
         width: 100%;
-        min-width: 160px;
+        min-width: 150px;
     }
 #presentation
     {
@@ -69,7 +69,7 @@ header /*style de l'en-tête en format mobile*/
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left: 8%;
+        margin-left: 3%;
     }
 h1 /*style du titre*/
     {
@@ -155,13 +155,13 @@ fieldset /*champ de recherche de localité*/
     {  
         display: flex;
         flex-wrap: wrap;
+        width: 350px;
         margin: 0px; 
         margin-bottom: 0px;
-        /*padding-left: 20px; */
     }
 #filtrant /*style de la zone de filtres*/
     {  
-        font-size:15px;
+        font-size:16px;
         font-weight: 700;
         display: flex;
         flex-wrap: wrap;
@@ -229,9 +229,13 @@ fieldset /*champ de recherche de localité*/
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
-        align-items: baseline;
-        width: 100%;
+        align-items: center;
+        width: 98%;
         min-width: 310px;
+    }
+aside
+    {
+        width: 100%;
     }
 #Populaires /*style de la partie les plus populaires*/
     {
@@ -242,9 +246,9 @@ fieldset /*champ de recherche de localité*/
         justify-content: center;
         align-items: baseline;
         width: 96%;
-        min-width: 300px;
+        min-width: 310px;
         height: fit-content;
-        padding-left: 7%;
+        padding-left: 8%;
         padding-top: 10px;
         padding-bottom: 30px;
     }
@@ -434,13 +438,13 @@ strong /*éléments en gras sur la desccription des images*/
         border-top-right-radius: 10px;
         width: 100%;
         height: 80%;
-        max-height: 150px;
+        max-height: 140px;
         object-fit: cover;
         object-position: top;
     }
 #Activités img.pom
     {
-        object-position: center;
+        object-position: center 40%;
     }
 #Activités figcaption /*particularité dans le descriptif des images des activités*/
     {   
@@ -458,7 +462,7 @@ footer /*style du pied de page*/
         background-color: #F2F2F2;
         width: 100%;
         min-width: 310px;
-        padding: 5px;
+        padding: 10px;
     }
 footer div
     {
@@ -577,12 +581,13 @@ ul
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: baseline;
+            width: auto;
             margin: 20px;
             margin-left: 0px;  
         }
     #filtrant
         {
-            font-size: 0.9em;
+            font-size: 15px;
             font-weight: 700;
         }
     h3 
@@ -621,7 +626,7 @@ ul
         }
     aside
         {
-            display: contents;
+            width: 100%;
         }
     #dispopop
         {
@@ -630,7 +635,7 @@ ul
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
-            width: 100%;
+            width: 96%;
             min-width: 600px;
         }
     .titreaside /*format des titres de la partie 'hebergements'*/
@@ -648,11 +653,11 @@ ul
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            width: 90%;
+            width: 99%;
             min-width: 100px;
-            max-width: 260px;
+            max-width: 210px;
             height: fit-content;
-            margin-right: 20px;
+            /*margin-right: 20px;*/
             margin-top: 0px;
             padding:5px;
         }
@@ -663,7 +668,7 @@ ul
             height: 120px;
             width: 98%;
             min-width: 100px;
-            max-width: 260px;
+            max-width: 210px;
             margin: 0px;
             
         }
@@ -671,7 +676,7 @@ ul
         {
             width: 100%;
             min-width: 100px;
-            max-width: 260px;
+            max-width: 210px;
             height: 80px;
             margin:0px;
             margin-top: 10px;
@@ -723,6 +728,7 @@ ul
             grid-row-gap: 30px;
             padding-bottom: 0px;
             margin: 0px;
+            height: 440px;
         }
     #Hébergements figure /*style image +figcaption*/
         {
@@ -831,7 +837,16 @@ ul
             height: 200px;
             margin: 0px;
         }
-    
+    #Activités img 
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 80%;
+            max-height: 170px;
+            object-fit: cover;
+            object-position: top;
+        }
     #Activités figcaption /*particularité dans le descriptif des images des activités*/
         {   
             margin: 10px;
@@ -839,6 +854,7 @@ ul
             font-weight: bold;
             width: 100%;
             height: fit-content;
+            line-height: 15px;
         }
 
     footer /*style du pied de page*/
@@ -850,7 +866,7 @@ ul
             width: 98%;
             min-width: 600px;
             margin-top: 20px;
-            padding-left: 20px;
+            padding-left: 5px;
         }
     footer div
         {
@@ -970,8 +986,13 @@ ul
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: baseline;
+            width: auto;
             margin: 20px;
             margin-left: 0px;  
+        }
+    #filtrant
+        {
+            font-size: 15px;
         }
     h3 
         {
@@ -1125,9 +1146,9 @@ ul
             border-top-left-radius:10px;
             border-top-right-radius:10px;
             height: 60%;
-            max-height: 90px;
+            max-height: 95px;
             width: 98%;
-            margin: 5px;
+            margin: 2px;
         }
     #Hébergements figcaption /*organisation du paragraphe de description des images*/
         {
@@ -1179,7 +1200,7 @@ ul
             grid-template-areas: "portArea fortArea calArea ndArea"
                              "portArea frioulArea calArea lcArea";
             grid-template-columns: 1fr 1fr 1fr 1fr; 
-            grid-template-rows: 200px 200px;
+            grid-template-rows: 180px 180px;
             gap: 10px;
             grid-column-gap: 20px;
             width: 100%;
@@ -1195,7 +1216,7 @@ ul
     .frioul
         {  
             grid-area: frioulArea;
-            margin-top: 30px;
+            margin-top: 10px;
         }
     .calanques
         {  
@@ -1208,6 +1229,7 @@ ul
     .longchamp
         {  
             grid-area: lcArea;
+            margin-top: -20px;
         }
     #Activités figure /*style image +figcaption*/
         {
@@ -1220,8 +1242,17 @@ ul
             max-width: 600px;
             height: fit-content;
             margin: 0px;
-        }
+        }  
     #Activités img.iles /*format images dans la partie activités*/
+        {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 100px;
+            max-height: 100px;
+            object-position: top;
+        }
+    #Activités img.cath /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -1229,45 +1260,40 @@ ul
             height: 110px;
             max-height: 110px;
         }
-    #Activités img.cath /*format images dans la partie activités*/
-        {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            width: 100%;
-            height: 140px;
-            max-height: 140px;
-        }
     #Activités img.parclc /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 140px;
-            max-height: 140px;
+            height: 130px;
+            max-height: 130px;
+            object-position: top;
         }
     #Activités img.pom /*format images dans la partie activités*/
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 170px;
-            max-height: 170px;
+            height: 140px;
+            max-height: 140px;
         }
     #Activités img.vport
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 350px;
-            max-height: 350px;
+            height: 300px;
+            max-height: 300px;
+            object-fit: none;
+            object-position: 55% 55%;
         }
     #Activités img.parccal
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 350px;
-            max-height: 350px;
+            height: 300px;
+            max-height: 300px;
         }
     #Activités figcaption /*particularité dans le descriptif des images des activités*/
         {   
@@ -1405,11 +1431,18 @@ ul
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: baseline;
+            width: auto;
             margin: 20px;
             margin-left: 0px;  
         }
+    #filtrant
+        {
+            font-size: 18px;
+            font-weight: 700;
+        }
     h3 
         {
+            font-size: 18px;
             padding-right: 20px;
         }
     .fa-info /*style de l'icone info*/
@@ -1590,9 +1623,9 @@ ul
             align-items: flex-start;
             width: 98%;
             min-width: 950px;
-            height: 670px;
+            height: 500px;
             margin-top: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 50px;
             padding-left: 0%;
         }
     .titreaside2 /*format du titre de la partie 'activités'*/
@@ -1614,7 +1647,7 @@ ul
             grid-template-areas: "portArea fortArea calArea ndArea"
                              "portArea frioulArea calArea lcArea";
             grid-template-columns: 1fr 1fr 1fr 1fr; 
-            grid-template-rows: 300px 300px;
+            grid-template-rows: 200px 200px;
             gap: 10px;
             grid-column-gap: 20px;
             width: 100%;
@@ -1630,7 +1663,7 @@ ul
     .frioul
         {  
             grid-area: frioulArea;
-            margin-top: 40px;
+            margin-top: 60px;
         }
     .calanques
         {  
@@ -1642,6 +1675,7 @@ ul
         }
     .longchamp
         {  
+            margin-top: 20px;
             grid-area: lcArea;
         }
     #Activités figure /*style image +figcaption*/
@@ -1650,59 +1684,63 @@ ul
             border-radius: 20px / 10px;
             box-shadow: 5px  5px  5px rgb(190, 190, 190);
             background-color: white;
-            width: 98%;
+            width: 85%;
             min-width: 210px;
             max-width: 600px;
             height: fit-content;
             margin: 0px;
         }
-    #Activités img.iles /*format images dans la partie activités*/
+        /*format images dans la partie activités*/
+    #Activités img.iles 
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 200px;
-            max-height: 200px;
+            height: 130px;
+            max-height: 130px;
         }
-    #Activités img.cath /*format images dans la partie activités*/
+    #Activités img.cath 
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 240px;
-            max-height: 240px;
+            height: 140px;
+            max-height: 140px;
         }
-    #Activités img.parclc /*format images dans la partie activités*/
+    #Activités img.parclc 
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 240px;
-            max-height: 240px;
+            height: 170px;
+            max-height: 170px;
+            object-position: center top;
         }
-    #Activités img.pom /*format images dans la partie activités*/
+    #Activités img.pom 
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 270px;
-            max-height: 270px;
+            height: 190px;
+            max-height: 190px;
+            object-position: center 35%;
         }
     #Activités img.vport
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 550px;
-            max-height: 550px;
+            height: 400px;
+            max-height: 400px;
+            object-fit: none;
         }
     #Activités img.parccal
         {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
             width: 100%;
-            height: 550px;
-            max-height: 550px;
+            height: 400px;
+            max-height: 400px;
         }
     #Activités figcaption /*particularité dans le descriptif des images des activités*/
         {   
@@ -1722,6 +1760,7 @@ ul
             background-color: #F2F2F2;
             width: 99%;
             min-width: 1400px;
+            padding: 5px;
         }
     footer div
         {
