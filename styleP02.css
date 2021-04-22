@@ -19,8 +19,8 @@ header /*style de l'en-tête en format mobile*/
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        min-width: 310px;
-        margin: 10px;
+        min-width: 300px;
+        margin-top: 10px;
     }   
 #reservia /*taille du logo*/
     {  
@@ -39,7 +39,7 @@ header /*style de l'en-tête en format mobile*/
         justify-self: flex-end;
         text-align: center;
         width: 100%;
-        min-width: 310px; 
+        min-width: 300px; 
         padding-top: 20px;
         margin-bottom: 10px;
     }
@@ -63,17 +63,17 @@ header /*style de l'en-tête en format mobile*/
     }
 #presentation
     {
-        width: 96%;
+        width: 95%;
         min-width: 260px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left: 3%;
+        margin-left: 5%;
     }
 h1 /*style du titre*/
     {
-        font-size: 22px;
+        font-size: 21px;
         font-weight: 700; 
         width: 90%;
         min-width: 300px;
@@ -107,7 +107,7 @@ fieldset /*champ de recherche de localité*/
         border: 1px #DEEBFF solid;
         border-radius: 10px/10px;
         padding: 0px;
-        width: 280px;
+        width: 270px;
         height: fit-content;
     }
 .saisie /*retrait de la bordure du champs de saisie*/
@@ -115,7 +115,7 @@ fieldset /*champ de recherche de localité*/
         font-weight: bold;
         border-style: none;
         padding: 10px;
-        width: 200px;
+        width: 190px;
     }
 .saisie:focus
     {
@@ -155,13 +155,14 @@ fieldset /*champ de recherche de localité*/
     {  
         display: flex;
         flex-wrap: wrap;
-        width: 350px;
+        width: 85%;
+        min-width: 280px;
         margin: 0px; 
         margin-bottom: 0px;
     }
 #filtrant /*style de la zone de filtres*/
     {  
-        font-size:16px;
+        font-size:14px;
         font-weight: 700;
         display: flex;
         flex-wrap: wrap;
@@ -207,7 +208,8 @@ fieldset /*champ de recherche de localité*/
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        width: 85%;
+        width: 90%;
+        font-size: 14px;
     }
 
     /*couleur des étoiles*/
@@ -230,12 +232,12 @@ fieldset /*champ de recherche de localité*/
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        width: 98%;
-        min-width: 310px;
+        width: 97%;
+        min-width: 280px;
     }
 aside
     {
-        width: 100%;
+        width: 95%;
     }
 #Populaires /*style de la partie les plus populaires*/
     {
@@ -245,10 +247,10 @@ aside
         flex-wrap: wrap;
         justify-content: center;
         align-items: baseline;
-        width: 96%;
-        min-width: 310px;
+        width: 99%;
+        min-width: 280px;
         height: fit-content;
-        padding-left: 8%;
+        padding-left: 4%;
         padding-top: 10px;
         padding-bottom: 30px;
     }
@@ -257,8 +259,8 @@ aside
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
-        width: 85%;
-        min-width: 290px;
+        width: 100%;
+        min-width: 270px;
         margin: 0px;
     }
     
@@ -269,7 +271,7 @@ aside
         min-width: 280px;
         align-items: baseline;
         justify-content: space-between;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 #Populaires figure /*style image +figcaption*/
     {
@@ -281,7 +283,7 @@ aside
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 95%;
         min-width: 280px;
         max-width: 500px;
         height: fit-content;
@@ -293,7 +295,7 @@ aside
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
         width: 40%;
-        min-width: 120px;
+        min-width: 110px;
         max-width: 350px;
         height: 130px;
         margin: 5px;
@@ -305,8 +307,8 @@ aside
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 85%;
-        min-width: 150px;
+        width: 50%;
+        min-width: 100px;
         max-width: 210px;
         height: fit-content;
         margin: 2%;
@@ -336,17 +338,17 @@ strong /*éléments en gras sur la desccription des images*/
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
-        width: 96%;
-        min-width: 300px;
+        width: 93%;
+        min-width: 280px;
         height: fit-content;
-        padding-left: 7%;
+        padding-left: 0%;
         padding-top: 10px;
     }
 .dispohéber
     {
         flex-direction: column;
         width: 100%;
-        min-width: 290px;
+        min-width: 280px;
     }
 #Hébergements figure /*style image +figcaption*/
     {
@@ -354,8 +356,8 @@ strong /*éléments en gras sur la desccription des images*/
         border-radius: 20px / 10px;
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
-        width: 85%;
-        min-width: 280px;
+        width: 90%;
+        min-width: 260px;
         max-width: 500px;
         height: fit-content;
         margin: 5px;
@@ -394,12 +396,12 @@ strong /*éléments en gras sur la desccription des images*/
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
-        width: 96%;
-        min-width: 300px;
+        width: 93%;
+        min-width: 280px;
         height: fit-content;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding-left: 7%;
+        padding-left: 0%;
     }
 .titreaside2 /*format des titres de la partie 'hactivités'*/
     {
@@ -408,7 +410,7 @@ strong /*éléments en gras sur la desccription des images*/
         min-width: 280px;
         align-items: baseline;
         justify-content: space-between;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 .dispoacti
     {
@@ -416,7 +418,7 @@ strong /*éléments en gras sur la desccription des images*/
         flex-wrap: nowrap;
         flex-direction: column;
         width: 100%;
-        min-width: 290px;
+        min-width: 280px;
         margin: 0px;
     }
 #Activités figure /*style image +figcaption*/
@@ -426,10 +428,10 @@ strong /*éléments en gras sur la desccription des images*/
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
         width: 85%;
-        min-width: 280px;
+        min-width: 260px;
         max-width: 500px;
         height: fit-content;
-        margin: 10px;
+        margin: 5px;
         margin-bottom: 20px;
     }
 #Activités img /*format images dans la partie hébergements*/
@@ -453,7 +455,7 @@ strong /*éléments en gras sur la desccription des images*/
         font-weight: 800;
         font-size: 15px;
         line-height: 25px;
-        width: 100%;
+        width: 85%;
         height: fit-content;
     }
 
@@ -461,13 +463,13 @@ footer /*style du pied de page*/
     {
         background-color: #F2F2F2;
         width: 100%;
-        min-width: 310px;
-        padding: 10px;
+        min-width: 290px;
+        padding: 0px;
     }
 footer div
     {
         padding: 10px;
-        padding-left: 40px;
+        padding-left: 30px;
     }
 footer div h3
     {
@@ -657,7 +659,6 @@ ul
             min-width: 100px;
             max-width: 210px;
             height: fit-content;
-            /*margin-right: 20px;*/
             margin-top: 0px;
             padding:5px;
         }
@@ -681,7 +682,7 @@ ul
             margin:0px;
             margin-top: 10px;
             margin-left: 5px;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 18px;
         }
     #Populaires .prix:after /*permet de sauter une première ligne avant les étoiles dans la partie les plus populaires*/
