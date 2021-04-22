@@ -26,6 +26,11 @@ header /*style de l'en-tête en format mobile*/
     {  
         width: 100px;
         height: 4%;
+        margin-left: 10px;
+    }
+.inscrire
+    {
+        margin-right: 20px;
     }
 .bleu /*style du lien s'inscrire*/
     {
@@ -97,7 +102,7 @@ h3 /*style du titre 'filtres'*/
     {
        margin: 0px;
        margin-top: 0px;
-       margin-bottom: 30px;
+       margin-bottom: 10px;
     }
 fieldset /*champ de recherche de localité*/
     {
@@ -267,7 +272,7 @@ aside
 .titreaside /*format des titres de la partie 'hébergements'*/
     {
         display: flex;
-        width: 85%;
+        width: 90%;
         min-width: 280px;
         align-items: baseline;
         justify-content: space-between;
@@ -348,7 +353,7 @@ strong /*éléments en gras sur la desccription des images*/
     {
         flex-direction: column;
         width: 100%;
-        min-width: 280px;
+        min-width: 270px;
     }
 #Hébergements figure /*style image +figcaption*/
     {
@@ -356,7 +361,7 @@ strong /*éléments en gras sur la desccription des images*/
         border-radius: 20px / 10px;
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
-        width: 90%;
+        width: 100%;
         min-width: 260px;
         max-width: 500px;
         height: fit-content;
@@ -388,7 +393,7 @@ strong /*éléments en gras sur la desccription des images*/
         font-weight: bold;
         text-decoration: none;
         color: black;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 #Activités /*style de la partie 'activités à Marseille'*/
     {
@@ -410,7 +415,7 @@ strong /*éléments en gras sur la desccription des images*/
         min-width: 280px;
         align-items: baseline;
         justify-content: space-between;
-        padding-left: 5px;
+        padding-left: 10px;
     }
 .dispoacti
     {
@@ -419,7 +424,7 @@ strong /*éléments en gras sur la desccription des images*/
         flex-direction: column;
         width: 100%;
         min-width: 280px;
-        margin: 0px;
+        margin-left: 5px;
     }
 #Activités figure /*style image +figcaption*/
     {
@@ -427,7 +432,7 @@ strong /*éléments en gras sur la desccription des images*/
         border-radius: 20px / 10px;
         box-shadow: 5px  5px  5px rgb(190, 190, 190);
         background-color: white;
-        width: 85%;
+        width: 93%;
         min-width: 260px;
         max-width: 500px;
         height: fit-content;
@@ -507,11 +512,11 @@ ul
         {  
             width: 100px;
             height: 4%;
-            margin-left: 5px;
+            margin-left: 10px;
         } 
     .inscrire /*position du lien s'inscrire*/
         {
-            margin-right: 10px;
+            margin-right: 20px;
         } 
     .navigation /*position des liens de navigation*/
         {   
@@ -801,6 +806,7 @@ ul
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 200px 200px;
             gap: 20px;
+            margin-left: 0px;
         }
     .port 
         { 
@@ -913,7 +919,7 @@ ul
     #reservia 
         {
             padding-right: 49%;
-            margin-left: 0px;
+            margin-left: 10px;
         }
     header > #reservia /*changement d'ordre des éléments de l'en-tête*/
         {
@@ -1359,7 +1365,7 @@ ul
     #reservia 
         {
             padding-right: 49%;
-            margin-left: 0px;
+            margin-left: 10px;
         }
     header > #reservia /*changement d'ordre des éléments de l'en-tête*/
         {
