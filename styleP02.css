@@ -78,10 +78,10 @@ header /*style de l'en-tête en format mobile*/
     }
 h1 /*style du titre*/
     {
-        font-size: 21px;
+        font-size: 20px;
         font-weight: 700; 
         width: 90%;
-        min-width: 300px;
+        max-width: 300px;
         margin-top: 10px;
         margin-bottom: 0px;
     }
@@ -161,7 +161,8 @@ fieldset /*champ de recherche de localité*/
         display: flex;
         flex-wrap: wrap;
         width: 85%;
-        min-width: 280px;
+        min-width: 290px;
+        max-width: 300px;
         margin: 0px; 
         margin-bottom: 0px;
     }
@@ -214,7 +215,8 @@ fieldset /*champ de recherche de localité*/
         flex-direction: row;
         align-items: baseline;
         width: 90%;
-        font-size: 14px;
+        max-width: 310px;
+        font-size: 13px;
     }
 
     /*couleur des étoiles*/
@@ -278,6 +280,10 @@ aside
         justify-content: space-between;
         padding-left: 5px;
     }
+.fa-chart-line
+    {
+        margin-right: 15px;
+    }
 #Populaires figure /*style image +figcaption*/
     {
         border: 1px solid #F2F2F2;
@@ -299,7 +305,7 @@ aside
     {
         border-top-left-radius:10px;
         border-bottom-left-radius:10px;
-        width: 40%;
+        width: 45%;
         min-width: 110px;
         max-width: 350px;
         height: 130px;
@@ -374,7 +380,7 @@ strong /*éléments en gras sur la desccription des images*/
         border-top-right-radius:10px;
         width: 98%;
         height: 60%;
-        max-height: 120px;
+        max-height: 150px;
         margin: 5px;
         object-fit: cover;
     }
@@ -445,13 +451,13 @@ strong /*éléments en gras sur la desccription des images*/
         border-top-right-radius: 10px;
         width: 100%;
         height: 80%;
-        max-height: 140px;
+        max-height: 150px;
         object-fit: cover;
-        object-position: top;
+        object-position: center 25%;
     }
 #Activités img.pom
     {
-        object-position: center 40%;
+        object-position: center 45%;
     }
 #Activités figcaption /*particularité dans le descriptif des images des activités*/
     {   
@@ -559,7 +565,8 @@ ul
             margin-left: 2%;
         }
     h1
-        {
+        {   
+            max-width: none;
             font-size: 22px;
         }
     .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
@@ -589,8 +596,10 @@ ul
             justify-content: flex-start;
             align-items: baseline;
             width: auto;
+            max-width: none;
             margin: 20px;
             margin-left: 0px;  
+            margin-bottom: 0px;
         }
     #filtrant
         {
@@ -605,6 +614,13 @@ ul
         {
             margin: 0px;
             margin-right: 10px;
+        }
+    #info
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 14px;
+            max-width: none;
         }
     #Héber /*style commun aux 2 parties hébergements*/
         {
@@ -642,7 +658,7 @@ ul
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
-            width: 96%;
+            width: 99%;
             min-width: 600px;
         }
     .titreaside /*format des titres de la partie 'hebergements'*/
@@ -660,9 +676,9 @@ ul
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            width: 99%;
+            width: 90%;
             min-width: 100px;
-            max-width: 210px;
+            max-width: 300px;
             height: fit-content;
             margin-top: 0px;
             padding:5px;
@@ -750,7 +766,8 @@ ul
             border-top-left-radius:10px;
             border-bottom-left-radius:10px;
             width: 97%;
-            height: 200px;
+            height: 120px;
+            max-height: 120px;
             margin: 5px;
         }
     #Hébergements figcaption /*organisation du paragraphe de description des images*/
@@ -894,10 +911,11 @@ ul
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             min-width: 950px;
             width: 98%;
             margin: 0px;
+            margin-top: 20px;
             padding: 0px;
         } 
     .navigation
@@ -920,6 +938,7 @@ ul
         {
             padding-right: 49%;
             margin-left: 10px;
+            width: 110px;
         }
     header > #reservia /*changement d'ordre des éléments de l'en-tête*/
         {
@@ -942,7 +961,7 @@ ul
             width: 100%;
             min-width: 150px;
             max-width: 400px;
-            padding-top: 20px;
+            padding-top: 30px;
             padding-right: 0px;
         }
     .gris:hover /*changement de style des liens de navigation au passage*/
@@ -954,7 +973,7 @@ ul
             width: 100%;
             min-width: 150px;
             max-width: 400px;
-            padding-top: 20px;
+            padding-top: 30px;
             padding-right: 0px;
         }
     #presentation
@@ -966,6 +985,10 @@ ul
             justify-content: center;
             align-items: flex-start;
             margin-left: 2%;
+        }
+    h1
+        {
+            max-width: none;
         }
     .fas.fa-search /*supprime le bouton icone recherche pour la version écran*/
         {
@@ -986,6 +1009,14 @@ ul
         {
             margin: 0px;
         }
+    .saisie
+        {
+            font-size: 15px;
+        }
+    .recherche
+        {
+            font-size: 15px;
+        }
     #filtres /*style de la zone de filtres*/
         {  
             font-weight: bold;
@@ -994,8 +1025,10 @@ ul
             justify-content: flex-start;
             align-items: baseline;
             width: auto;
-            margin: 20px;
-            margin-left: 0px;  
+            max-width: none;
+            margin: 15px;
+            margin-left: 0px;
+            margin-bottom: 0px;  
         }
     #filtrant
         {
@@ -1009,6 +1042,13 @@ ul
         {
             margin: 0px;
             margin-right: 10px;
+        }
+    #info
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: 15px;
+            max-width: none;
         }
     #Héber /*style commun aux 2 parties hébergements*/
         {
@@ -1108,7 +1148,7 @@ ul
             margin-right: 10px;   
             padding-left: 0%;
             padding-top: 10px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
         }
     .cannebière
         {grid-area: un;}
@@ -1130,14 +1170,14 @@ ul
                 'quatre cinq six';
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            grid-column-gap: 2%;
-            grid-row-gap: 10px ;
+            grid-column-gap: 5%;
+            grid-row-gap: 20px ;
             padding-bottom: 25px;
-            width: 96%;
+            width: 94%;
             min-width: 600px;
             max-width: 1200px;
             margin: 0px;
-            margin-right: 2%;
+            margin-right: 5%;
             margin-left: 2%;
         }
     #Hébergements figure /*style image +figcaption*/
@@ -1340,10 +1380,11 @@ ul
             display: flex;
             flex-wrap: nowrap;
             justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
             min-width: 950px;
             width: 98%;
             margin: 0px;
+            margin-top: 20px;
             padding: 0px;
         } 
     .navigation
@@ -1355,17 +1396,20 @@ ul
             min-width: 200px;
             max-width: 700px;
             padding-top: 0px;
+            font-size: 16px;
         }    
     .inscrire
         {
             padding-left: 30px;
             margin-top: 10px;
             justify-self: flex-end;
+            font-size: 16px;
         }
     #reservia 
         {
             padding-right: 49%;
             margin-left: 10px;
+            width: 120px;
         }
     header > #reservia /*changement d'ordre des éléments de l'en-tête*/
         {
@@ -1388,7 +1432,7 @@ ul
             width: 100%;
             min-width: 150px;
             max-width: 400px;
-            padding-top: 20px;
+            padding-top: 30px;
             padding-right: 0px;
         }
     .gris:hover /*changement de style des liens de navigation au passage*/
@@ -1400,7 +1444,7 @@ ul
             width: 100%;
             min-width: 150px;
             max-width: 400px;
-            padding-top: 20px;
+            padding-top: 30px;
             padding-right: 0px;
         }
     #presentation
@@ -1426,11 +1470,28 @@ ul
             border: 1px solid  #0065FC;
             border-radius: 10px / 10px;
             padding: 10px;
-            background-color:  #0065FC;     
+            background-color:  #0065FC;  
+            font-size: 18px;   
         } 
+    h1
+        {
+            font-size: 25px;
+            max-width: none;
+        }
+    #description
+        {
+            font-size: 18px;
+        }
     fieldset
         {
             margin: 0px;
+            width: 350px;
+            height: 50px;
+        }
+    .saisie
+        {
+            width: 250px;
+            font-size: 18px;
         }
     #filtres /*style de la zone de filtres*/
         {  
@@ -1439,19 +1500,37 @@ ul
             flex-wrap: nowrap;
             justify-content: flex-start;
             align-items: baseline;
-            width: auto;
-            margin: 20px;
+            width: 80%;
+            max-width: none;
+            margin: 15px;
             margin-left: 0px;  
+            margin-bottom: 0px;
         }
     #filtrant
         {
-            font-size: 18px;
+            font-size: 20px;
             font-weight: 700;
         }
     h3 
         {
+            font-size: 22px;
+            padding-right: 40px;
+            margin-left: 0px;
+        }
+    .critere
+        {
+            margin-right: 30px;
+        }
+    .fas
+        {
+            margin-right: 20px;
+        }
+    #info
+        {
+            margin-top: 5px;
+            margin-bottom: 5px;
             font-size: 18px;
-            padding-right: 20px;
+            max-width: none;
         }
     .fa-info /*style de l'icone info*/
         {
@@ -1479,6 +1558,7 @@ ul
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
+            align-items: center;
             width: 30%;
             min-width: 400px;
             max-width: 600px;
@@ -1498,9 +1578,9 @@ ul
         }
     #dispopop 
         {
-            width: 98%;
+            width: 90%;
             margin-right: 2%;
-            margin-left: 2%;
+            margin-left: 4%;
         }
     #Populaires figure /*style image +figcaption*/
         {
@@ -1556,7 +1636,7 @@ ul
             margin-right: 10px;   
             padding-left: 0%;
             padding-top: 10px;
-            padding-bottom: 30px;
+            padding-bottom: 20px;
         }
     .cannebière
         {grid-area: un;}
@@ -1579,13 +1659,13 @@ ul
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             grid-column-gap: 2%;
-            grid-row-gap: 10px ;
+            grid-row-gap: 20px ;
             padding-bottom: 30px;
-            width: 98%;
+            width: 94%;
             min-width: 850px;
             max-width: 1500px;
             margin: 0px;
-            margin-right: 2%;
+            margin-right: 5%;
             margin-left: 2%;
         }
     #Hébergements figure /*style image +figcaption*/
